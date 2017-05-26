@@ -1,0 +1,133 @@
+<html>
+<head id="head"><title>
+	CGK ON : Books - Charles G. Koch
+</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<style>
+	* {
+		box-sizing: border-box;
+	}
+	.articles {
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	.article-tile {
+		display: inline-block;
+		width: calc(33% - 1rem);
+		margin: 1rem 0.5rem;
+		padding: 1rem 1.25rem;
+		background: url(/img/tile_bg.png) repeat;
+		cursor: pointer;
+		transition: all 0.2s ease-in-out;
+	}
+	.article-tile:hover {
+		transform: scale(1.03);
+	}
+	.article-tile:hover::before {
+		content: '';
+		display: block;
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(192, 178, 110, 0.4);
+	}
+	.article-tile:hover h2, .article-tile:hover span, .article-tile:hover img {
+		position: relative;
+		z-index: 2;
+	}
+	.article-tile:hover span {
+		color: #fff;
+	}
+	.article-tile h2 {
+		display: inline-block;
+		margin: 0.5rem 0 1.5rem 0;
+		font-family: sans-serif;
+		font-size: 2rem;
+		color: #444;
+	}
+	.article-tile span {
+		display: inline-block;
+		float: right;
+		margin: 0.5rem 0 1.5rem 0;
+		font-size: 2rem;
+		color: #c0b26e;
+	}
+	.article-tile img {
+		max-width: 400px;
+		max-height: 300px;
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+	.cgk-bio {
+		max-width: 1200px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 5rem 0;
+	}
+	.bio-img {
+		display: inline-block;
+		width: 30%;
+	}
+	.bio-copy {
+		display: inline-block;
+		float: right;
+		width: 70%;
+		padding-left: 3rem;
+	}
+	.bio-copy h3 {
+		text-transform: uppercase;
+		font-family: museo-slab, serif;
+		font-size: 1.3rem;
+		color: #c0b26e;
+	}
+	.bio-copy p {
+		line-height: 1.2;
+	}
+</style>
+
+
+</head>
+<body>
+	
+	<section class="articles">
+		<div class="article-tile">
+			<h2>Books</h2>
+			<span>/ 01</span>
+			<img src="http://placehold.it/400x300" alt="#">
+		</div>
+		<div class="article-tile">
+			<h2>Parenthood</h2>
+			<span>/ 02</span>
+			<img src="http://placehold.it/400x300" alt="#">
+		</div>
+		<div class="article-tile">
+			<h2>Failure</h2>
+			<span>/ 03</span>
+			<img src="http://placehold.it/400x300" alt="#">
+		</div>
+	</section>
+	<section class="cgk-bio">
+		<div class="bio-img">
+			<img src="/img/cgk.jpg">
+		</div>
+		<div class="bio-copy">
+			<h3>The Man. The Myth. The Legend.</h3>
+			<p>These books offer powerful antidotes to what is preventing the world from being a much better place: “The Upright Thinkers” by Leonard Mlodinow is a beautifully told story of the heroes, from Galileo to Darwin to Einstein, who transformed our lives by challenging the politically correct myths that hinder human progress. Our future depends on having such heroes. “Permissionless Innovation” by Adam Thierer reminds us that today’s technology has put people everywhere on the cusp of having better lives than anyone ever dreamed. </p>
+		</div>
+	</section>
+
+</body>
+</html>

@@ -1,0 +1,1703 @@
+@charset "UTF-8";
+@import url("../../KOCHstoriesV2/article_template.css");
+@import url("../../KOCHstoriesV2/modules.css");
+@import url("../../KOCHstoriesV2/social.css");
+@import url("../../KOCHstoriesV2/video.css");
+
+/*--BREAKPOINTS--*/
+
+
+/*--RANDOM STYLE OVERRIDES--*/
+
+
+/* VIDEO */
+
+iframe.audioPopup {
+	border: none;
+	overflow: hidden;
+	height: 634px;
+	min-height: auto;
+}
+
+.play_cta_small {
+	cursor: pointer;
+	opacity: .8;
+	-webkit-transition: opacity ease .5s;
+	transition: opacity ease .5s;
+}
+
+.play_cta_small:hover {
+	opacity: 1;
+}
+
+
+/*AUDIO*/
+
+.audiojs {
+	width: 100%;
+	margin-left: 0;
+	padding: 1rem 0;
+}
+
+.audiojs .play,
+.audiojs .pause {
+	background-color: #BBB272;
+	-webkit-transition: all ease .5s;
+	transition: all ease .5s;
+}
+
+.audiojs .play:hover,
+.audiojs .pause:hover {
+	opacity: .75;
+}
+
+.audiojs .scrubber {
+	border-bottom: 1px solid #BBB272 !important;
+}
+
+.audiojs .progress {
+	background: #BBB272;
+}
+
+
+/*MASTER*/
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+}
+
+
+/*MODULES*/
+
+.v2-col-2-left,
+.v2-col-2-right {
+	position: relative;
+	height: 100% !important;
+	width: calc(50% - 1rem) !important;
+	float: left !important;
+	overflow: visible !important;
+	padding: 1rem;
+	margin: .5rem;
+}
+
+
+/*SITE WIDE*/
+
+.header_icons {
+	display: none;
+}
+
+.search {
+	display: none;
+}
+
+nav.nav_closed {
+	display: none;
+}
+
+header {
+	display: none;
+}
+
+.mobile_header_spacer {
+	display: none;
+}
+
+.max_width_container {
+	max-width: 1200px;
+	padding: 0;
+	/*--481--*/
+}
+
+@media (max-width: 75em) {
+	.max_width_container {
+		padding: 0 2rem 0;
+	}
+}
+
+.social_media_intro {
+	/* CHARLES G. KOCH | ON: */
+	font-family: "proxima-nova", sans-serif;
+	font-weight: 400;
+	max-width: 310px;
+	font-size: 20px;
+	color: #FFFFFF;
+	letter-spacing: 0px;
+	line-height: 30px;
+	border-top: 10px solid #BBB272;
+	margin: 0;
+	padding: 1rem 0;
+	/*--481--*/
+}
+
+@media (max-width: 30.0625em) {
+	.social_media_intro {
+		font-size: 16px;
+		line-height: 22px;
+	}
+}
+
+
+/*SOCIAL SHARING*/
+
+.faWebpart {
+	color: #BBB272;
+}
+
+.SocialSharing {
+	display: block;
+	width: 100%;
+	max-width: 310px;
+	text-align: left;
+	padding: 0;
+}
+
+.SocialSharing .social_media_intro {
+	display: none;
+	/* CHARLES G. KOCH | ON: */
+	font-family: "proxima-nova", sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: #FFFFFF;
+	letter-spacing: 0px;
+	line-height: 30px;
+	border-top: 10px solid #BBB272;
+	margin: 0;
+	padding: 1rem 0;
+}
+
+.SocialSharing .SocialSeparator {
+	display: none;
+}
+
+.SocialSharing .faWebpart {
+	border: none;
+	padding: .35em;
+	/*--481--*/
+}
+
+@media (max-width: 64em) {
+	.SocialSharing .faWebpart {
+		background: transparent;
+	}
+}
+
+.SocialSharing .faWebpart:first-child {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.SocialSharing .fa-twitter:hover {
+	color: #55ACEE;
+	background: none;
+}
+
+.SocialSharing .fa-envelope:hover {
+	color: #9B9B9B;
+	background: none;
+}
+
+.SocialSharing .fa-facebook:hover {
+	color: #3B5998;
+	background: none;
+}
+
+.SocialSharing .fa-linkedin:hover {
+	color: #0077B5;
+	background: none;
+}
+
+
+/*-- JOTFORM --*/
+
+.supernova {
+	background-color: transparent !important;
+}
+
+
+/*--END STYLE OVERRIDES--*/
+
+
+/*-- START HTML ELEMENTS --*/
+
+.gold {
+	color: #BBB272;
+}
+
+.allmostBLK {
+	color: #2F2A2B;
+}
+
+.allmostBLK_bg {
+	background: #2F2A2B;
+}
+
+.black {
+	color: #262523;
+}
+
+.fancy {
+	font-weight: 400;
+}
+
+.center {
+	text-align: center;
+}
+
+.author {
+	font-family: museo-slab, serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.white_bg {
+	background: #ffffff;
+}
+
+
+/*-- END HTML ELEMENTS --*/
+
+
+/*-- START CGKONBAR --*/
+
+.cgkONbar {
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	height: 6.5em;
+	width: 100%;
+	padding-top: 3rem;
+	-webkit-transition: all ease .5s;
+	transition: all ease .5s;
+	/*--767--*/
+}
+
+@media (max-width: 47.938em) {
+	.cgkONbar {
+		padding-top: 0;
+		height: 3.5em;
+		background: rgba(0, 0, 0, 0.8)
+	}
+}
+
+
+/*--481--*/
+
+
+}
+@media (max-width: 23.75em) {
+	.cgkONbar {
+		padding-top: 0;
+	}
+}
+.cgkONbar .cgkOn {
+	padding: 13px 0;
+}
+.cgkONbar .cgkOn img.cgkOn_img {
+	display: inline-block;
+	line-height: 30px;
+	vertical-align: middle;
+}
+.cgkONbar_active {
+	background: rgba(0, 0, 0, 0.8);
+	padding-top: 0;
+	height: 3.5rem;
+}
+/*-- START cgkONbar_home --*/
+
+.cgkONbar_home {
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+	padding: 0;
+	-webkit-transition: all ease .5s;
+	transition: all ease .5s;
+	/*--767--*/
+}
+
+@media (max-width: 47.938em) {
+	.cgkONbar_home {
+		padding-top: 0;
+		height: 3.5em;
+		background: rgba(0, 0, 0, 0.8)
+	}
+}
+
+
+/*--481--*/
+
+
+}
+@media (max-width: 23.75em) {
+	.cgkONbar_home {
+		padding-top: 0;
+	}
+}
+.cgkONbar_home .home_inner {
+	padding: 3rem 0;
+	border-bottom: 2px solid #c0b26e;
+}
+@media(max-width: 75em) {
+	.cgkONbar_home .home_inner {
+		padding: 1.5rem 2rem;
+	}
+}
+.cgkONbar_home .cgkOn {
+	padding: 13px 0;
+}
+.cgkONbar_home .cgkOn h3 {
+	color: #fff;
+	margin: 0.5rem 0;
+	font-size: 1.6rem;
+}
+.cgkONbar_home .cgkOn h4 {
+	font-family: museo-slab, serif;
+	color: #c0b26e;
+	font-size: 0.9rem;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.cgkONbar_home .cgkOn img.cgkOn_img {
+	display: inline-block;
+	line-height: 30px;
+	height: 2rem;
+	vertical-align: middle;
+	margin: 0.375rem 0;
+}
+@media(max-width: 40rem) {
+	.cgkONbar_home .cgkOn img.cgkOn_img {
+		height: 1.2rem;
+	}
+	.cgkONbar_home .home_inner {
+		padding: 0 2rem;
+		border: 0;
+	}
+	.cgkONbar_home .cgkOn h3 {
+		font-size: 1.2rem;
+		margin: 0.3rem 0;
+	}
+	.cgkONbar_home .cgkOn h4 {
+		font-size: 0.7rem;
+	}
+	.cgkONbar_home .cgkOn .cgkOn_swapped {
+		margin-top: 0;
+	}
+}
+.cgkONbar_home .cgkOn .cgkOn_swapped {
+	margin-left: 2rem;
+	padding-left: 2rem;	
+}
+.cgkONbar_home .cgkOn .cgkOn_swap {
+	margin-left: 2rem;
+	margin-top: 0.2rem;
+	padding-left: 2rem;	
+	border-left: 2px solid #ffffff;
+}
+.cgkONbar_home_active {
+	background: rgba(0, 0, 0, 0.8);
+	height: 4rem;
+}
+.cgkONbar_home_active .home_inner {
+	padding: 0;
+	border: 0;
+}
+@media(max-width: 75em) {
+	.cgkONbar_home_active .home_inner {
+		padding: 0 2rem;
+	}
+}
+.cgkONbar_home_active .cgkOn img.cgkOn_img {
+	height: 1.5rem;
+}
+.cgkOn img.cgkOn_img, .home_inner {
+	transition: all 0.3s ease-in-out;
+}
+.cgkONbar_home {
+	transition: all 0.5s ease-in-out;
+}
+
+
+/*-- END CGKONBAR --*/
+
+/*-- START HEADER SECTION  --*/
+.cgkHeader {
+	background: url("/wearekoch/media/KOCHstoriesV2/CGK/cgkHeader1800.jpg") center center, no-repeat;
+	background-size: cover;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	height: 670px;
+	width: 100%;
+	/*--481--*/
+	/*--481--*/
+	/*--481--*/
+	/*--481--*/
+	/*--481--*/
+}
+@media (max-width: 112.5em) {
+	.cgkHeader {
+		background: url("/wearekoch/media/KOCHstoriesV2/CGK/cgkHeader1800.jpg") center center, no-repeat;
+		background-size: cover;
+	}
+}
+@media (max-width: 75em) {
+	.cgkHeader {
+		background: url("/wearekoch/media/KOCHstoriesV2/CGK/cgkHeader1200.jpg") top center, no-repeat;
+		background-size: cover;
+	}
+}
+@media (max-width: 64em) {
+	.cgkHeader {
+		background: url("/wearekoch/media/KOCHstoriesV2/CGK/cgkHeader1024.jpg") top center, no-repeat;
+		background-size: cover;
+	}
+}
+@media (max-width: 47.938em) {
+	.cgkHeader {
+		background: url("/wearekoch/media/KOCHstoriesV2/CGK/cgkHeader768.jpg") top center, no-repeat;
+		background-size: cover;
+		position: absolute;
+	}
+}
+@media (max-width: 30.0625em) {
+	.cgkHeader {
+		height: 110vh;
+	}
+}
+.cgkHeader .downArrow {
+	position: absolute;
+	margin: 0 auto;
+	bottom: 1rem;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+.cgkHeader .downArrow .fa {
+	font-size: 1.56rem;
+}
+.cgkOn {
+	padding: 0 0 5rem;
+}
+.cgkOn img.cgkOn_img {
+	display: inline-block;
+	line-height: 30px;
+	height: 24px;
+	margin: 3px 0;
+	vertical-align: middle;
+	/*--481--*/
+	/*--481--*/
+	/*--481--*/
+}
+@media (max-width: 37.5625em) {
+	.cgkOn img.cgkOn_img {
+		height: 22px;
+		margin: 5px 0;
+	}
+}
+@media (max-width: 23.75em) {
+	.cgkOn img.cgkOn_img {
+		height: 20px;
+		margin: 4px 0;
+	}
+}
+@media (max-width: 22.5em) {
+	.cgkOn img.cgkOn_img {
+		height: 15px;
+		margin: 7px 0;
+	}
+}
+.cgkOn .cgkOn_swap {
+	vertical-align: top;
+	font-family: "proxima-nova", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #BBB272;
+	line-height: 15px;
+	margin-left: .25rem;
+	display: inline-block;
+}
+.cgkOn .cgkOn_swap img {
+	height: 24px;
+	margin: 3px 0;
+	/*--481--*/
+	/*--481--*/
+}
+@media (max-width: 37.5625em) {
+	.cgkOn .cgkOn_swap img {
+		height: 22px;
+		margin: 4px 0;
+	}
+}
+@media (max-width: 23.75em) {
+	.cgkOn .cgkOn_swap img {
+		height: 20px;
+		margin: 4px 0;
+	}
+}
+.cgkOn .cgkOn_swapped {
+	vertical-align: top;
+	font-family: "proxima-nova", sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	color: #BBB272;
+	line-height: 16px;
+	display: inline-block;
+	margin-left: .75rem;
+	padding-left: 1.25rem;
+	border-left: 2px solid #ffffff;
+	/*--481--*/
+	/*--481--*/
+}
+@media (max-width: 23.75em) {
+	.cgkOn .cgkOn_swapped {
+		font-size: 12px;
+		line-height: 12px;
+		margin-top: 2px;
+		margin-left: .5rem;
+		padding-left: .75rem;
+	}
+}
+@media (max-width: 22.5em) {
+	.cgkOn .cgkOn_swapped {
+		font-size: 10px;
+		line-height: 12px;
+		margin-left: .5rem;
+		padding-left: .75rem;
+	}
+}
+.cgkOn .cgkOn_swapped img {
+	height: 30px;
+}
+
+.cgkHomeHeader {
+	background: url("/wearekoch/media/KOCHstoriesV2/CGK/moreInfo.jpg") center center, no-repeat;
+	background-size: cover;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+	/*--481--*/
+	/*--481--*/
+	/*--481--*/
+	/*--481--*/
+	/*--481--*/
+}
+@media (max-width: 112.5em) {
+	.cgkHomeHeader {
+		background: url("/wearekoch/media/KOCHstoriesV2/CGK/moreInfo.jpg") center center, no-repeat;
+		background-size: cover;
+	}
+}
+@media (max-width: 75em) {
+	.cgkHomeHeader {
+		background: url("/wearekoch/media/KOCHstoriesV2/CGK/moreInfo.jpg") top center, no-repeat;
+		background-size: cover;
+	}
+}
+@media (max-width: 64em) {
+	.cgkHomeHeader {
+		background: url("/wearekoch/media/KOCHstoriesV2/CGK/moreInfo.jpg") top center, no-repeat;
+		background-size: cover;
+	}
+}
+@media (max-width: 47.938em) {
+	.cgkHomeHeader {
+		background: url("/wearekoch/media/KOCHstoriesV2/CGK/moreInfo.jpg") top center, no-repeat;
+		background-size: cover;
+	}
+}
+.homeSubheader {
+	color: #ffffff;
+	font-family: "proxima-nova", sans-serif;
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+.articles {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 4rem 0;
+	padding-bottom: 6rem;
+}
+
+.article-tile {
+	display: inline-block;
+	width: calc(33% - 1rem);
+	margin: 1rem 0.5rem;
+	padding: 1.5rem 1rem;
+	/*background: url(/img/tile_bg.png) repeat;*/
+	background-color: #eee;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+@media(max-width: 75rem) {	
+	.articles {
+		padding: 4rem 2rem;
+	}
+	.articles a {
+		display: inline-block;
+		width: calc(50% - 1rem);
+		margin: 0 0.5rem;
+	}
+	.article-tile {
+		width: 100%;
+		max-width: 380px;
+		margin: 1rem auto;
+	}
+}
+@media(max-width: 40em) {
+	.homeSubheader {
+		font-size: 1.75rem;
+	}
+	.articles a {
+		width: 100%;
+		margin: 0;
+	}
+}
+.article-tile::before {
+	opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+.article-tile.unpublished {
+	cursor: default;
+}
+.article-tile:hover {
+	transform: scale(1.02);
+}
+.article-tile:hover::before {
+	content: '';
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	transition: all 0.2s ease-in-out;
+	background-color: rgba(192, 178, 110, 0.7);
+}
+
+.article-tile h2 {
+	display: inline-block;
+	margin: 0.5rem 0 1.5rem 0;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #444;
+}
+.article-tile span {
+	display: inline-block;
+	float: right;
+	margin: 0.5rem 0 1.5rem 0;
+	font-size: 1.75rem;
+	font-family: museo-slab, serif;
+	font-weight: bold;
+	color: #c0b26e;
+	transition: all 0.2s ease-in-out;
+}
+.article-tile img {
+	max-width: 400px;
+	max-height: 300px;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.article-tile:hover h2, .article-tile:hover span, .article-tile:hover img {
+	position: relative;
+	z-index: 2;
+}
+.article-tile:hover span {
+	color: #fff;
+}
+.home_story_intro {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	padding-top: 5rem;
+	margin-top: 11rem;
+}
+@media(max-width: 75em) {
+	.home_story_intro {
+		padding: 0 2rem;
+	}
+}
+@media(max-width: 40rem) {
+	.home_story_intro {
+		margin-top: 8rem;
+	}
+}
+.email-form {
+	background-color: #c0b26e;
+}
+.email-inner {
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 4rem 0;
+}
+
+.email-form p {
+	display: inline-block;
+	width: 280px;
+	text-transform: uppercase;
+	text-align: right;
+	font-family: museo-slab, serif;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #fff;
+	line-height: 1.3;
+	letter-spacing: 2px;
+	margin: 0;
+	padding: 0;
+}
+.email-input, .submit-button {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 1.5rem;
+}
+.email-input input{
+	height: 40px;
+	width: 300px;
+	background: transparent;
+	border: 1px solid white;
+	border-radius: 3px;
+	padding: 0.3rem 1.5rem;
+	font-family: museo-slab, serif;
+}
+.email-input input:focus {
+	outline-color: #fff;
+}
+.submit-button input {
+	height: 40px;
+	padding: 0.3rem 1.5rem;
+	text-transform: uppercase;
+	font-size: 1.25rem;
+	font-family: proxima-nova, sans-serif;
+	color: #444;
+	background-color: #fff;
+	border: 0;
+	border-radius: 3px;
+}
+@media(max-width: 40rem) {
+	.email-inner {
+		margin: 0 2rem;
+		width: auto;
+	}
+	.email-form p {
+		width: auto;
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+	.email-input {
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+	.email-input, .submit-button {
+		margin-left: 0;
+	}
+	.email-input input{
+		width: 100%;
+	}
+}
+.cgk-bio {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 7rem 0;
+	overflow: hidden;
+}
+
+.bio-img {
+	display: inline-block;
+	width: 30%;
+}
+.bio-img img {
+	width: 100%;
+}
+.bio-copy {
+	display: inline-block;
+	float: right;
+	width: 70%;
+	padding-left: 3rem;
+}
+.bio-copy h3 {
+	text-transform: uppercase;
+	font-family: museo-slab, serif;
+	font-size: 1.3rem;
+	color: #c0b26e;
+	margin: 0;
+}
+.bio-copy p {
+	line-height: 1.75;
+	font-size: 1rem;
+	color: #444;
+}
+@media(max-width: 75em) {
+	.cgk-bio {
+		padding: 7rem 2rem;
+	}
+}
+@media(max-width: 40rem) {
+	.bio-img, .bio-copy {
+		display: block;
+		width: 100%;
+		float: none;
+		padding: 0;
+	}
+}
+
+
+.story_intro {
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	/*--481--*/
+	/*--481--*/
+}
+@media (max-width: 30.0625em) {
+	.story_intro {
+		top: 52%;
+	}
+}
+@media (max-width: 23.75em) {
+	.story_intro {
+		top: 50%;
+	}
+}
+.story_intro .cgkQuotes {
+	font-family: "proxima-nova", sans-serif;
+	font-weight: 800;
+	font-size: 70px;
+	max-width: 1040px;
+	color: #FFFFFF;
+	letter-spacing: 0px;
+	line-height: 80px;
+	/*--481--*/
+	/*--481--*/
+	/*--481--*/
+	/*--481--*/
+}
+@media (max-width: 64em) {
+	.story_intro .cgkQuotes {
+		font-size: 54px;
+		line-height: 60px;
+		max-width: 800px;
+	}
+}
+@media (max-width: 37.5625em) {
+	.story_intro .cgkQuotes {
+		font-size: 39px;
+		line-height: 46px;
+	}
+}
+@media (max-width: 23.75em) {
+	.story_intro .cgkQuotes {
+		font-size: 36px;
+		line-height: 46px;
+	}
+}
+@media (max-width: 22.5em) {
+	.story_intro .cgkQuotes {
+		font-size: 28px;
+		line-height: 33px;
+	}
+}
+.story_intro .cgkQuotes .afterQ {
+	/*--481--*/
+}
+@media (max-width: 37.5625em) {
+	.story_intro .cgkQuotes .afterQ {
+		display: block;
+		text-align: center;
+		font-size: 100px;
+		line-height: 0;
+		padding-top: 3rem;
+	}
+}
+.story_intro .cgkQuotes:before {
+	content: "\201C";
+	font-weight: 400;
+	color: #BBB272;
+	position: absolute;
+	left: -2rem;
+	top: -.5rem;
+	/*--481--*/
+	/*--481--*/
+}
+@media (max-width: 75em) {
+	.story_intro .cgkQuotes:before {
+		left: .5rem;
+	}
+}
+@media (max-width: 48em) {
+	.story_intro .cgkQuotes:before {
+		display: block;
+		left: 0;
+		top: 1.5rem;
+		position: relative;
+		text-align: center;
+		font-size: 100px;
+	}
+}
+
+/*-- END HEADER SECTION --*/
+
+/*-- START BOOKINTRO SECTION  --*/
+.bookIntro {
+	background: url("/wearekoch/media/KOCHstoriesV2/CGK/bookIntro.jpg") center center, no-repeat;
+	background-size: cover;
+	padding: 5rem 0;
+	position: relative;
+	height: 65vh;
+	/*--481--*/
+	/*--481--*/
+	/*--481--*/
+	/*--481--*/
+}
+@media (max-width: 100em) {
+	.bookIntro {
+		background: url("/wearekoch/media/KOCHstoriesV2/CGK/bookIntro1800.jpg") center center, no-repeat;
+		background-size: cover;
+	}
+}
+@media (max-width: 75em) {
+	.bookIntro {
+		background: url("/wearekoch/media/KOCHstoriesV2/CGK/bookIntro1200.jpg") center center, no-repeat;
+		background-size: cover;
+	}
+}
+@media (max-width: 64em) {
+	.bookIntro {
+		background: url("/wearekoch/media/KOCHstoriesV2/CGK/bookIntro1024.jpg") center center, no-repeat;
+		background-size: cover;
+	}
+}
+@media (max-width: 48em) {
+	.bookIntro {
+		background: url("/wearekoch/media/KOCHstoriesV2/CGK/bookIntro768.png") center center, no-repeat;
+		background-size: cover;
+		height: 85vh;
+	}
+}
+.bookIntro .watchCharles {
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	/*--481--*/
+}
+@media (max-width: 48em) {
+	.bookIntro .watchCharles {
+		text-align: left;
+	}
+}
+.bookIntro .watchCharles .play_cta {
+	margin-top: 0;
+	width: 115px;
+	cursor: pointer;
+	-webkit-transition: opacity ease .5s;
+	transition: opacity ease .5s;
+	display: inline-block;
+	vertical-align: middle;
+	/*--481--*/
+}
+@media (max-width: 30.0625em) {
+	.bookIntro .watchCharles .play_cta {
+		margin: 0 auto 1.5rem;
+		display: inherit;
+	}
+}
+.bookIntro .watchCharles .copy {
+	display: inline-block;
+	margin-left: 1rem;
+	vertical-align: middle;
+	width: 80%;
+	max-width: 600px;
+	font-family: museo-slab, serif;
+	font-weight: 300;
+	font-size: 32px;
+	color: #FFFFFF;
+	letter-spacing: 0px;
+	line-height: 42px;
+	text-shadow: 4px 6px 17px rgba(0, 0, 0, 0.32);
+	/*--481--*/
+	/*--481--*/
+	/*--481--*/
+}
+@media (max-width: 48em) {
+	.bookIntro .watchCharles .copy {
+		width: 100%;
+		margin-left: 0;
+	}
+}
+@media (max-width: 30.0625em) {
+	.bookIntro .watchCharles .copy {
+		font-size: 26px;
+		line-height: 36px;
+	}
+}
+@media (max-width: 22.5em) {
+	.bookIntro .watchCharles .copy {
+		font-size: 21px;
+		line-height: 30px;
+	}
+}
+
+/*-- END BOOKINTRO SECTION --*/
+
+/*-- START TOP FOUR SECTION  --*/
+.top4_bg {
+	background: url("/wearekoch/media/KOCHstoriesV2/CGK/top4_bg.png") center center, repeat;
+	background-size: 100%;
+	padding: 10rem 0;
+	position: relative;
+	text-align: center;
+	/*--481--*/
+	/*--481--*/
+	/*--481--*/
+	/*--481--*/
+}
+@media (max-width: 100em) {
+	.top4_bg {
+		background: url("/wearekoch/media/KOCHstoriesV2/CGK/top4_bg1800.png") center center, repeat;
+		background-size: 100%;
+	}
+}
+@media (max-width: 64em) {
+	.top4_bg {
+		background: url("/wearekoch/media/KOCHstoriesV2/CGK/top4_bg1024.png") center center, repeat;
+		background-size: 100%;
+	}
+}
+@media (max-width: 48em) {
+	.top4_bg {
+		background: url("/wearekoch/media/KOCHstoriesV2/CGK/top4_bg768.png") center center, repeat;
+		background-size: 100%;
+		padding: 6rem 0;
+	}
+}
+@media (max-width: 37.5625em) {
+	.top4_bg {
+		padding: 6rem 0 0;
+	}
+}
+.top4_bg .max_width_container {
+	/*--481--*/
+}
+@media (max-width: 37.5625em) {
+	.top4_bg .max_width_container {
+		padding: 0;
+	}
+}
+.top4_bg .top4_wrapper {
+	/*--481--*/
+}
+@media (max-width: 37.5625em) {
+	.top4_bg .top4_wrapper {
+		text-align: left;
+		padding: 0 2rem;
+	}
+}
+.top4_bg h1 {
+	/* CGK Top Four Copy: */
+	
+	font-family: "proxima-nova", sans-serif;
+	font-weight: 800;
+	font-size: 70px;
+	letter-spacing: 0px;
+	/*--481--*/
+	/*--481--*/
+	/*--481--*/
+}
+@media (max-width: 48em) {
+	.top4_bg h1 {
+		font-size: 56px;
+	}
+}
+@media (max-width: 30.0625em) {
+	.top4_bg h1 {
+		font-size: 42px;
+	}
+}
+@media (max-width: 22.5em) {
+	.top4_bg h1 {
+		font-size: 36px;
+	}
+}
+.top4_bg .subText {
+	/* “These books are the: */
+	
+	font-family: museo-slab, serif;
+	font-size: 36px;
+	color: #2F2A2B;
+	line-height: 50px;
+	max-width: 650px;
+	margin: 0 auto;
+	padding: 2rem 0 4rem;
+	/*--481--*/
+	/*--481--*/
+}
+@media (max-width: 48em) {
+	.top4_bg .subText {
+		font-size: 24px;
+	}
+}
+@media (max-width: 30.0625em) {
+	.top4_bg .subText {
+		font-size: 28px;
+		line-height: 36px;
+	}
+}
+.top4_bg .quadBlock {
+	padding: 1rem;
+	position: relative;
+	display: table;
+	/*--481--*/
+}
+@media (max-width: 37.5625em) {
+	.top4_bg .quadBlock {
+		padding: 2rem 1rem;
+	}
+}
+.top4_bg .quadBlock .goldPlay {
+	width: 69px !important;
+	height: 69px;
+	margin-top: 3px;
+	display: table-cell;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-transition: all ease .5s;
+	transition: all ease .5s;
+}
+.top4_bg .quadBlock .goldPlay:hover {
+	opacity: .75;
+}
+.top4_bg .quadBlock .quadInfo {
+	display: table-cell;
+	text-align: left;
+	padding-left: 1rem;
+	vertical-align: middle;
+}
+.top4_bg .quadBlock .quadInfo .profile_audio {
+	color: #BBB272;
+	/* AUDIO: */
+	
+	font-family: "proxima-nova", sans-serif;
+	font-weight: 800;
+	font-size: 14px;
+	line-height: 24px;
+}
+.top4_bg .quadBlock .quadInfo .profile_Desc {
+	color: #ffffff;
+	font-family: "proxima-nova", sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+}
+.close {
+	z-index: 10001;
+	position: absolute;
+	top: .5rem;
+	right: .5rem;
+	cursor: pointer;
+}
+.close a.closeLink {
+	/*--481--*/
+}
+@media (max-width: 100em) {
+	.close a.closeLink {
+		background-color: #ffffff;
+		padding: 2px 10px;
+		border-radius: 100%;
+		border: 1px solid #2F2A2B;
+		font-size: 24px !important;
+		font-weight: 800 !important;
+	}
+}
+.close a {
+	font-family: "proxima-nova", sans-serif;
+	font-weight: 100;
+	font-size: 36px;
+	color: #BBB272;
+	line-height: 36px;
+	cursor: pointer;
+}
+.close a:hover {
+	cursor: pointer;
+}
+.blackout {
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(255, 255, 255, 0.75);
+	display: none;
+	-webkit-transition: all ease .5s;
+	transition: all ease .5s;
+}
+.blackout .blackout_inner {
+	position: absolute;
+	width: 75%;
+	max-width: 1300px;
+	height: 672px;
+	padding: 1rem;
+	text-align: center;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #ffffff;
+	margin: 0 auto;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	box-shadow: 15px 0px 100px 15px rgba(0, 0, 0, 0.2);
+}
+.blackout .blackout_inner .popupNav {
+	background: url("/wearekoch/media/KOCHstoriesV2/CGK/top4_bg.png") center center, no-repeat;
+	background-size: cover;
+	height: 84px;
+	width: 100%;
+	clear: both;
+	/*--481--*/
+	/*--481--*/
+	/*--481--*/
+}
+@media (max-width: 100em) {
+	.blackout .blackout_inner .popupNav {
+		background: url("/wearekoch/media/KOCHstoriesV2/CGK/top4_bg1800.png") center center, repeat;
+		background-size: cover;
+	}
+}
+@media (max-width: 64em) {
+	.blackout .blackout_inner .popupNav {
+		background: url("/wearekoch/media/KOCHstoriesV2/CGK/top4_bg1024.png") center center, repeat;
+		background-size: cover;
+	}
+}
+@media (max-width: 48em) {
+	.blackout .blackout_inner .popupNav {
+		background: url("/wearekoch/media/KOCHstoriesV2/CGK/top4_bg768.png") center center, repeat;
+		background-size: cover;
+	}
+}
+.blackout .blackout_inner .popupNav .popupNav_inner {
+	line-height: 84px;
+}
+.blackout .blackout_inner .popupNav .popupNav_inner .next,
+.blackout .blackout_inner .popupNav .popupNav_inner .previous {
+	/* < PREVIOUS: */
+	
+	font-family: "proxima-nova", sans-serif;
+	font-weight: 800;
+	font-size: 14px;
+	color: #2F2A2B;
+	text-transform: uppercase;
+}
+.blackout .blackout_inner .popupNav .popupNav_inner .fa-circle:before {
+	color: #BBB272;
+}
+
+/*-- END TOP FOUR SECTION --*/
+
+/*-- START TOP TEN SECTION  --*/
+.bookshelf_img {
+	width: 100%;
+	background: url("/wearekoch/media/KOCHstoriesV2/CGK/bookshelf.jpg") center center, no-repeat;
+	background-size: cover;
+	/*--481--*/
+	/*--481--*/
+	/*--481--*/
+	/*--481--*/
+	/*--481--*/
+}
+@media (max-width: 112.5em) {
+	.bookshelf_img {
+		background: url("/wearekoch/media/KOCHstoriesV2/CGK/bookshelf1800.jpg") center center, no-repeat;
+		background-size: cover;
+	}
+}
+@media (max-width: 75em) {
+	.bookshelf_img {
+		background: url("/wearekoch/media/KOCHstoriesV2/CGK/bookshelf1200.jpg") center center, no-repeat;
+		background-size: cover;
+	}
+}
+@media (max-width: 48em) {
+	.bookshelf_img {
+		background: url("/wearekoch/media/KOCHstoriesV2/CGK/bookshelf1200.jpg") center center, no-repeat;
+		background-size: cover;
+		height: 225px;
+	}
+}
+@media (max-width: 30.0625em) {
+	.bookshelf_img {
+		background: url("/wearekoch/media/KOCHstoriesV2/CGK/bookshelf1200.jpg") 676px center, no-repeat;
+		background-size: cover;
+		height: 240px;
+	}
+}
+@media (max-width: 23.75em) {
+	.bookshelf_img {
+		height: 266px;
+	}
+}
+.ten_more {
+	padding: 10rem 0 5rem;
+	-webkit-transition: all ease .5s;
+	transition: all ease .5s;
+	/*--481--*/
+	/*--481--*/
+	/*--481--*/
+}
+@media (max-width: 64em) {
+	.ten_more {
+		padding: 10rem 2rem 5rem;
+	}
+}
+@media (max-width: 48em) {
+	.ten_more {
+		padding: 5rem 2rem 5rem;
+	}
+}
+@media (max-width: 37.5625em) {
+	.ten_more {
+		padding: 3rem 2rem 3rem;
+	}
+}
+.ten_more h1 {
+	text-align: left;
+	font-family: "proxima-nova", sans-serif;
+	font-weight: 800;
+	font-size: 70px;
+	letter-spacing: 0px;
+	color: #2F2A2B;
+	/*--481--*/
+	/*--481--*/
+}
+@media (max-width: 48em) {
+	.ten_more h1 {
+		font-size: 36px;
+	}
+}
+@media (max-width: 23.75em) {
+	.ten_more h1 {
+		font-size: 24px;
+	}
+}
+.ten_more .readingList {
+	padding-left: 0;
+	text-align: left;
+	margin-top: 4rem;
+	font-family: museo-slab, serif;
+	font-weight: 600;
+	font-size: 18px;
+	letter-spacing: 0px;
+	line-height: 24px;
+	-webkit-transition: all ease .5s;
+	transition: all ease .5s;
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	-ms-column-count: 2;
+	-o-column-count: 2;
+	column-count: 2;
+	-webkit-column-gap: 5em;
+	-moz-column-gap: 5em;
+	-ms-column-gap: 5em;
+	-o-column-gap: 5em;
+	column-gap: 5em;
+	/*--481--*/
+	/*--481--*/
+}
+@media (max-width: 48em) {
+	.ten_more .readingList {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		-ms-column-count: 1;
+		-o-column-count: 1;
+		column-count: 1;
+		-webkit-column-gap: 0em;
+		-moz-column-gap: 0em;
+		-ms-column-gap: 0em;
+		-o-column-gap: 0em;
+		column-gap: 0em;
+	}
+}
+@media (max-width: 30.0625em) {
+	.ten_more .readingList {
+		margin-top: 2rem;
+	}
+}
+.ten_more .readingList li {
+	overflow: visible !important;
+	counter-increment: foo;
+	list-style-type: none;
+	list-style-position: inside;
+	position: relative;
+	padding-left: 1.5rem;
+	/*--481--*/
+}
+@media (max-width: 30.0625em) {
+	.ten_more .readingList li {
+		padding-left: 1rem;
+	}
+}
+.ten_more .readingList li:before {
+	content: counter(foo) "";
+	position: absolute;
+	left: 0;
+}
+.ten_more .readingList p {
+	font-family: "proxima-nova", sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	letter-spacing: 0px;
+	line-height: 24px;
+	margin-left: 1rem;
+	-webkit-transition: all ease .5s;
+	transition: all ease .5s;
+}
+.ten_more .showMore,
+.ten_more .showLess {
+	cursor: pointer;
+	text-align: left;
+	font-family: museo-slab, serif;
+	font-weight: 400;
+	font-size: 24px;
+	letter-spacing: 0px;
+	line-height: 48px;
+	margin-left: 1rem;
+	-webkit-transition: all ease .5s;
+	transition: all ease .5s;
+}
+.ten_more .showMore .fa-chevron-circle-down:before,
+.ten_more .showLess .fa-chevron-circle-down:before {
+	color: #BBB272;
+}
+.ten_more .showMore .fa-chevron-circle-up:before,
+.ten_more .showLess .fa-chevron-circle-up:before {
+	color: #BBB272;
+}
+.texture {
+	background: url("/wearekoch/media/KOCHstoriesV2/CGK/top4_bg.png") center center, no-repeat;
+	background-size: 100%;
+	position: relative;
+	text-align: center;
+	/*--481--*/
+	/*--481--*/
+	/*--481--*/
+}
+@media (max-width: 100em) {
+	.texture {
+		background: url("/wearekoch/media/KOCHstoriesV2/CGK/top4_bg1800.png") center center, repeat;
+		background-size: 100%;
+	}
+}
+@media (max-width: 64em) {
+	.texture {
+		background: url("/wearekoch/media/KOCHstoriesV2/CGK/top4_bg1024.png") center center, repeat;
+		background-size: 100%;
+	}
+}
+@media (max-width: 48em) {
+	.texture {
+		background: url("/wearekoch/media/KOCHstoriesV2/CGK/top4_bg768.png") center center, repeat;
+		background-size: 100%;
+	}
+}
+
+/*-- END TOP TEN SECTION --*/
+
+/*-- START TOP TEN SECTION  --*/
+.moreInfo {
+	width: 100%;
+	background: url("/wearekoch/media/KOCHstoriesV2/CGK/moreInfo.jpg") center center, no-repeat;
+	background-size: cover;
+	padding: 5rem 0;
+	position: relative;
+	background-color: #2F2A2B;
+	/*--481--*/
+	/*--481--*/
+}
+@media (max-width: 100em) {
+	.moreInfo {
+		background: url("/wearekoch/media/KOCHstoriesV2/CGK/moreInfo1800.jpg") center center, no-repeat;
+		background-size: cover;
+	}
+}
+@media (max-width: 37.5625em) {
+	.moreInfo {
+		background: none;
+		background-color: #2F2A2B;
+	}
+}
+.moreInfo .v2-col-2-left {
+	padding-left: 0;
+	margin-left: 0;
+}
+.moreInfo .v2-col-2-right {
+	padding-left: 0;
+	margin-left: 1rem;
+	/*--481--*/
+}
+@media (max-width: 37.5625em) {
+	.moreInfo .v2-col-2-right {
+		margin-left: 0;
+	}
+}
+
+/*-- END TOP TEN SECTION --*/
+@media only screen and (min-width: 600px) {
+	/* For tablets: */
+	
+	.mobile_button {
+		display: none;
+	}
+}
+@media only screen and (min-width: 768px) {
+	/* For desktop: */
+	
+	.mobile_button {
+		display: none;
+	}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 450px) {
+	/* Styles */
+	
+	.desktop_button {
+		display: none;
+	}
+	
+	.v2-col-2-left,
+	.v2-col-2-right,
+	.popup_left {
+		position: relative;
+		height: 100% !important;
+		width: 100% !important;
+		float: left !important;
+		overflow: visible !important;
+		padding: 0rem;
+		margin: 0;
+	}
+	/* additional */
+	
+	iframe.audioPopup {
+		border: none;
+		overflow: hidden;
+		height: 900px !important;
+		min-height: 800;
+	}
+	
+	.blackout_box {
+		padding: 1rem !important;
+		height: auto !important;
+	}
+	
+	.popupNav {
+		display: none !important;
+	}
+	
+	.audiojs {
+		padding: 1rem !important;
+		margin-top: -5.5rem !important;
+		position: absolute !important;
+		background: rgba(0, 0, 0, 0.6);
+	}
+	
+	.audioInfo {
+		margin-top: -3.25rem !important;
+		text-align: left !important;
+		position: absolute;
+	}
+	
+	.audioInfo p {
+		display: none !important;
+	}
+	
+	.audioInfo h3 {
+		margin: 0 0 0 72px !important;
+	}
+	
+	.blackout_box .popup_right {
+		width: 100% !important;
+		float: left;
+	}
+	
+	.blackout_box .popup_right h1 {
+		font-weight: 400 !important;
+		font-size: 18px !important;
+		line-height: 30px !important;
+		margin: 0 0 2rem !important;
+	}
+	
+	.blackout_box .popup_right .right_inner_left,
+	.blackout_box .popup_right .right_inner_right {
+		width: 100% !important;
+		padding: 0 !important;
+	}
+	
+	.blackout_box .popup_right .right_inner_left .way_right_inner_left,
+	.blackout_box .popup_right .right_inner_right .way_right_inner_left {
+		padding: 0 .5rem 0 0;
+		width: calc(50% - 0rem);
+		float: left;
+	}
+	
+	.blackout_box .popup_right .right_inner_left .way_right_inner_right,
+	.blackout_box .popup_right .right_inner_right .way_right_inner_right {
+		padding: 0 0 0 .5rem;
+		width: calc(50% - 0rem);
+		float: left;
+	}
+	
+	.blackout_box .popup_right .right_inner_left p,
+	.blackout_box .popup_right .right_inner_right p {
+		margin-bottom: 0 !important;
+	}
+	
+	.blackout_box .popup_right .right_inner_left a,
+	.blackout_box .popup_right .right_inner_right a {
+		line-height: 60px !important;
+	}
+	
+	.audiojs .scrubber {
+		width: 75% !important;
+	}
+	
+	.blackout .blackout_inner {
+		position: absolute;
+		width: 100%;
+		max-width: 1300px;
+		height: 100%;
+		padding: 0rem !important;
+		text-align: center;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: #ffffff;
+		margin: 0 auto;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+		box-shadow: 15px 0px 100px 15px rgba(0, 0, 0, 0.2);
+		overflow-y: scroll;
+	}
+	
+	.blackout_box .popup_left {
+		width: 40%;
+		float: left;
+		padding: 0 0rem !important;
+	}
+}
+footer {
+	display: block;
+}
