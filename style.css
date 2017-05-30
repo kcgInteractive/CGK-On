@@ -131,7 +131,9 @@ header {
 	padding: 1rem 0;
 	/*--481--*/
 }
-
+.social_media_intro.parenthood {
+	max-width: 371px;
+}
 @media (max-width: 30.0625em) {
 	.social_media_intro {
 		font-size: 16px;
@@ -338,7 +340,7 @@ header {
 }
 .cgkONbar_home .home_inner {
 	padding: 3rem 0;
-	border-bottom: 2px solid #c0b26e;
+	border-bottom: 2px solid #bbb272;
 }
 @media(max-width: 75em) {
 	.cgkONbar_home .home_inner {
@@ -355,7 +357,7 @@ header {
 }
 .cgkONbar_home .cgkOn h4 {
 	font-family: museo-slab, serif;
-	color: #c0b26e;
+	color: #bbb272;
 	font-size: 0.9rem;
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -627,8 +629,8 @@ header {
 	width: calc(33% - 1rem);
 	margin: 1rem 0.5rem;
 	padding: 1.5rem 1rem;
-	/*background: url(/img/tile_bg.png) repeat;*/
-	background-color: #eee;
+	background: url(/cgkon/media/CGKon/tile_bg.png) center center repeat;
+	background-size: 100%;
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
 }
@@ -679,7 +681,8 @@ header {
 	height: 100%;
 	opacity: 1;
 	transition: all 0.2s ease-in-out;
-	background-color: rgba(192, 178, 110, 0.7);
+	background-color: #BBB272;
+	opacity: 0.8;
 }
 
 .article-tile h2 {
@@ -732,9 +735,22 @@ header {
 	}
 }
 .email-form {
-	background-color: #c0b26e;
+	background: url(/wearekoch/media/KOCHstoriesV2/CGK/top4_bg.png) center center repeat;
+}
+.email-form::before {
+	content: '';
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 10.5rem;
+	display: block;
+	background-color: #BBB272;
+	background-size: 100%;
+	opacity: 0.9;
 }
 .email-inner {
+	position: relative;
 	max-width: 800px;
 	width: 100%;
 	margin: 0 auto;
@@ -829,7 +845,7 @@ header {
 	text-transform: uppercase;
 	font-family: museo-slab, serif;
 	font-size: 1.3rem;
-	color: #c0b26e;
+	color: #BBB272;
 	margin: 0;
 }
 .bio-copy p {
@@ -871,7 +887,7 @@ header {
 }
 .story_intro .cgkQuotes {
 	font-family: "proxima-nova", sans-serif;
-	font-weight: 800;
+	font-weight: 600;
 	font-size: 70px;
 	max-width: 1040px;
 	color: #FFFFFF;
@@ -1050,7 +1066,7 @@ header {
 /*-- END BOOKINTRO SECTION --*/
 
 /*-- START TOP FOUR SECTION  --*/
-.top4_bg {
+.top4_bg, .video_bg {
 	background: url("/wearekoch/media/KOCHstoriesV2/CGK/top4_bg.png") center center, repeat;
 	background-size: 100%;
 	padding: 10rem 0;
@@ -1062,26 +1078,26 @@ header {
 	/*--481--*/
 }
 @media (max-width: 100em) {
-	.top4_bg {
+	.top4_bg, .video_bg {
 		background: url("/wearekoch/media/KOCHstoriesV2/CGK/top4_bg1800.png") center center, repeat;
 		background-size: 100%;
 	}
 }
 @media (max-width: 64em) {
-	.top4_bg {
+	.top4_bg, .video_bg {
 		background: url("/wearekoch/media/KOCHstoriesV2/CGK/top4_bg1024.png") center center, repeat;
 		background-size: 100%;
 	}
 }
 @media (max-width: 48em) {
-	.top4_bg {
+	.top4_bg, .video_bg {
 		background: url("/wearekoch/media/KOCHstoriesV2/CGK/top4_bg768.png") center center, repeat;
 		background-size: 100%;
 		padding: 6rem 0;
 	}
 }
 @media (max-width: 37.5625em) {
-	.top4_bg {
+	.top4_bg, .video_bg {
 		padding: 6rem 0 0;
 	}
 }
@@ -1089,7 +1105,7 @@ header {
 	/*--481--*/
 }
 @media (max-width: 37.5625em) {
-	.top4_bg .max_width_container {
+	.top4_bg .max_width_container, .video_bg .max_width_container {
 		padding: 0;
 	}
 }
@@ -1097,12 +1113,12 @@ header {
 	/*--481--*/
 }
 @media (max-width: 37.5625em) {
-	.top4_bg .top4_wrapper {
+	.top4_bg .top4_wrapper, .video_bg .top4_wrapper {
 		text-align: left;
 		padding: 0 2rem;
 	}
 }
-.top4_bg h1 {
+.top4_bg h1, .video_bg h1 {
 	/* CGK Top Four Copy: */
 	
 	font-family: "proxima-nova", sans-serif;
@@ -1114,21 +1130,21 @@ header {
 	/*--481--*/
 }
 @media (max-width: 48em) {
-	.top4_bg h1 {
+	.top4_bg h1, .video_bg h1 {
 		font-size: 56px;
 	}
 }
 @media (max-width: 30.0625em) {
-	.top4_bg h1 {
+	.top4_bg h1, .video_bg h1{
 		font-size: 42px;
 	}
 }
 @media (max-width: 22.5em) {
-	.top4_bg h1 {
+	.top4_bg h1, .video_bg h1 {
 		font-size: 36px;
 	}
 }
-.top4_bg .subText {
+.top4_bg .subText, .video_bg .subText {
 	/* “These books are the: */
 	
 	font-family: museo-slab, serif;
@@ -1141,13 +1157,17 @@ header {
 	/*--481--*/
 	/*--481--*/
 }
+.video_bg .subText {
+	max-width: 850px;
+	font-weight: 300;
+}
 @media (max-width: 48em) {
-	.top4_bg .subText {
+	.top4_bg .subText, .video_bg .subText {
 		font-size: 24px;
 	}
 }
 @media (max-width: 30.0625em) {
-	.top4_bg .subText {
+	.top4_bg .subText, .video_bg .subText {
 		font-size: 28px;
 		line-height: 36px;
 	}
@@ -1201,13 +1221,31 @@ header {
 .close {
 	z-index: 10001;
 	position: absolute;
-	top: .5rem;
-	right: .5rem;
+	top: 1.5rem;
+	right: 1.5rem;
 	cursor: pointer;
 }
 .close a.closeLink {
 	/*--481--*/
 }
+/*.close a.closeLink::before {
+	content: '';
+	position: absolute;
+	display: block;
+	height: 40px;
+	width: 2px;
+	background-color: black;
+	transform: rotate(-45deg);
+}
+.close a.closeLink::after {
+	content: '';
+	position: absolute;
+	display: block;
+	height: 40px;
+	width: 2px;
+	background-color: black;
+	transform: rotate(-45deg);
+}*/
 @media (max-width: 100em) {
 	.close a.closeLink {
 		background-color: #ffffff;
@@ -1219,10 +1257,15 @@ header {
 	}
 }
 .close a {
-	font-family: "proxima-nova", sans-serif;
+	/*font-family: "proxima-nova", sans-serif;
 	font-weight: 100;
 	font-size: 36px;
 	color: #BBB272;
+	line-height: 36px;
+	cursor: pointer;*/
+	font-weight: 500;
+	font-size: 42px;
+	color: #000;
 	line-height: 36px;
 	cursor: pointer;
 }
