@@ -78,7 +78,7 @@ body {
 	width: calc(50% - 1rem) !important;
 	float: left !important;
 	overflow: visible !important;
-	padding: 1rem;
+	padding: 0;
 	margin: .5rem;
 }
 
@@ -391,6 +391,9 @@ header {
 .cgkONbar_home .cgkOn .cgkOn_swapped {
 	margin-left: 2rem;
 	padding-left: 2rem;	
+	padding-top: 0.3rem;
+	padding-bottom: 0.3rem;
+	font-size: 14px;
 }
 .cgkONbar_home .cgkOn .cgkOn_swap {
 	margin-left: 2rem;
@@ -575,7 +578,7 @@ header {
 }
 
 .cgkHomeHeader {
-	background: url("/wearekoch/media/KOCHstoriesV2/CGK/moreInfo.jpg") center center, no-repeat;
+	background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/moreInfo.jpg") center center, no-repeat;
 	background-size: cover;
 	padding: 0;
 	width: 100%;
@@ -586,7 +589,7 @@ header {
 	/*--481--*/
 	/*--481--*/
 }
-@media (max-width: 112.5em) {
+/*@media (max-width: 112.5em) {
 	.cgkHomeHeader {
 		background: url("/wearekoch/media/KOCHstoriesV2/CGK/moreInfo.jpg") center center, no-repeat;
 		background-size: cover;
@@ -609,7 +612,7 @@ header {
 		background: url("/wearekoch/media/KOCHstoriesV2/CGK/moreInfo.jpg") top center, no-repeat;
 		background-size: cover;
 	}
-}
+}*/
 .homeSubheader {
 	color: #ffffff;
 	font-family: "proxima-nova", sans-serif;
@@ -620,7 +623,7 @@ header {
 	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 4rem 0;
+	padding: 3rem 0;
 	padding-bottom: 6rem;
 }
 
@@ -629,8 +632,7 @@ header {
 	width: calc(33% - 1rem);
 	margin: 1rem 0.5rem;
 	padding: 1.5rem 1rem;
-	background: url(/cgkon/media/CGKon/tile_bg.png) center center repeat;
-	background-size: 100%;
+	background: url(/App_Themes/wearekoch/KOCHstoriesV2/CGK/Texture_Pattern.jpg) center center repeat;
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
 }
@@ -664,6 +666,35 @@ header {
 }
 .article-tile.unpublished {
 	cursor: default;
+}
+.unpublished-img {
+	position: relative;
+}
+.unpublished-img::before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 3;
+}
+
+.unpublished-img .coming-soon {
+	position: absolute;
+	display: block;
+	width: 290px;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.75rem;
+	font-family: museo-slab, serif;
+	color: #fff;
+	letter-spacing: -1px;
+	z-index: 3;
 }
 .article-tile:hover {
 	transform: scale(1.02);
@@ -721,7 +752,7 @@ header {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0;
-	padding-top: 5rem;
+	padding-top: 4rem;
 	margin-top: 11rem;
 }
 @media(max-width: 75em) {
@@ -735,9 +766,10 @@ header {
 	}
 }
 .email-form {
-	background: url(/wearekoch/media/KOCHstoriesV2/CGK/top4_bg.png) center center repeat;
+	background-color: #BBB272;
+	/*background: url(/wearekoch/media/KOCHstoriesV2/CGK/Texture_Pattern.jpg) center center repeat;*/
 }
-.email-form::before {
+/*.email-form::before {
 	content: '';
 	position: absolute;
 	top:0;
@@ -748,7 +780,7 @@ header {
 	background-color: #BBB272;
 	background-size: 100%;
 	opacity: 0.9;
-}
+}*/
 .email-inner {
 	position: relative;
 	max-width: 800px;
@@ -784,9 +816,10 @@ header {
 	border-radius: 3px;
 	padding: 0.3rem 1.5rem;
 	font-family: museo-slab, serif;
+	color: #2f2a26;
 }
 .email-input input:focus {
-	outline-color: #fff;
+	outline: 0;
 }
 .submit-button input {
 	height: 40px;
@@ -794,10 +827,15 @@ header {
 	text-transform: uppercase;
 	font-size: 1.25rem;
 	font-family: proxima-nova, sans-serif;
-	color: #444;
 	background-color: #fff;
+	color: #2f2a26;
 	border: 0;
 	border-radius: 3px;
+	transition: all 0.3s ease-in-out;
+}
+.submit-button input:hover {
+	color: #fff;
+	background-color: #2f2a26;
 }
 @media(max-width: 40rem) {
 	.email-inner {
@@ -820,6 +858,40 @@ header {
 		width: 100%;
 	}
 }
+.moreInfo .email-form {
+	background: transparent;
+}
+.moreInfo .email-inner {
+	padding: 2rem 0;
+}
+.moreInfo .email-form p {
+	color: #bbb272;
+	font-weight: 300;
+}
+.moreInfo .email-form input {
+	border: 1px solid #bbb272;
+	color: #fff;
+}
+.moreInfo .email-form .submit-button input {
+	background-color: #bbb272;
+	color: #2f2a26;
+	transition: all 0.3s ease-in-out;
+}
+.moreInfo .email-form .submit-button input:hover {
+	background-color: #fff;
+}
+
+.watermark {
+	position: relative;
+	height: 2rem;
+}
+.watermark img {
+	position: absolute;
+	right: 5%;
+	top: -1rem;
+	width: 90%;
+	max-width: 1000px;
+}
 .cgk-bio {
 	max-width: 1200px;
 	width: 100%;
@@ -840,6 +912,7 @@ header {
 	float: right;
 	width: 70%;
 	padding-left: 3rem;
+	padding-top: 3rem
 }
 .bio-copy h3 {
 	text-transform: uppercase;
@@ -855,7 +928,7 @@ header {
 }
 @media(max-width: 75em) {
 	.cgk-bio {
-		padding: 7rem 2rem;
+		padding: 5rem 2rem;
 	}
 }
 @media(max-width: 40rem) {
@@ -866,6 +939,40 @@ header {
 		padding: 0;
 	}
 }
+
+/*-- PREVIOUS/NEXT ARTICLES --*/
+.popupNav {
+    /*background: url("/wearekoch/media/KOCHstoriesV2/CGK/Texture_Pattern.jpg") center center, no-repeat;*/
+    /*background-size: cover;*/
+    height: 80px;
+    width: 100%;
+    clear: both;
+}
+.prev-next .popupNav_inner {
+    line-height: 80px;
+    text-align: center;
+}
+.next, .previous {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #2f2a2b;
+    text-transform: uppercase;
+}
+.next i, .previous i {
+	color: #bbb272;
+	font-size: 1.1rem;
+}
+.next i {
+	padding-left: 0.3rem;
+}
+.previous i {
+	padding-right: 0.3rem;
+}
+.prev-next .fa-circle:before {
+    color: #bbb272;
+}
+/*-- PREVIOUS/NEXT ARTICLES --*/
 
 
 .story_intro {
@@ -1065,11 +1172,116 @@ header {
 
 /*-- END BOOKINTRO SECTION --*/
 
+/*-- START PARENTINTRO SECTION  --*/
+.ParentIntro {
+	background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/parentintro1800.png") center center, no-repeat;
+	background-size: cover;
+	padding: 5rem 0;
+	position: relative;
+	height: 65vh;
+	margin-top: 670px;
+	/*--481--*/
+	/*--481--*/
+	/*--481--*/
+	/*--481--*/
+}
+@media (max-width: 100em) {
+	.ParentIntro {
+		background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/parentintro1800.png") center center, no-repeat;
+		background-size: cover;
+	}
+}
+@media (max-width: 75em) {
+	.ParentIntro {
+		background: url("/wearekoch/media/KOCHstoriesV2/CGK/bookIntro1200.jpg") center center, no-repeat;
+		background-size: cover;
+	}
+}
+@media (max-width: 64em) {
+	.ParentIntro {
+		background: url("/wearekoch/media/KOCHstoriesV2/CGK/bookIntro1024.jpg") center center, no-repeat;
+		background-size: cover;
+	}
+}
+@media (max-width: 48em) {
+	.ParentIntro {
+		background: url("/wearekoch/media/KOCHstoriesV2/CGK/bookIntro768.png") center center, no-repeat;
+		background-size: cover;
+		height: 85vh;
+	}
+}
+.ParentIntro .watchCharles {
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	/*--481--*/
+}
+@media (max-width: 48em) {
+	.ParentIntro .watchCharles {
+		text-align: left;
+	}
+}
+.ParentIntro .watchCharles .play_cta {
+	margin-top: 0;
+	width: 115px;
+	cursor: pointer;
+	-webkit-transition: opacity ease .5s;
+	transition: opacity ease .5s;
+	display: inline-block;
+	vertical-align: middle;
+	/*--481--*/
+}
+@media (max-width: 30.0625em) {
+	.ParentIntro .watchCharles .play_cta {
+		margin: 0 auto 1.5rem;
+		display: inherit;
+	}
+}
+.ParentIntro .watchCharles .copy {
+	display: inline-block;
+	margin-left: 1rem;
+	vertical-align: middle;
+	width: 80%;
+	max-width: 600px;
+	font-family: museo-slab, serif;
+	font-weight: 300;
+	font-size: 32px;
+	color: #FFFFFF;
+	letter-spacing: 0px;
+	line-height: 42px;
+	text-shadow: 4px 6px 17px rgba(0, 0, 0, 0.32);
+	/*--481--*/
+	/*--481--*/
+	/*--481--*/
+}
+@media (max-width: 48em) {
+	.ParentIntro .watchCharles .copy {
+		width: 100%;
+		margin-left: 0;
+	}
+}
+@media (max-width: 30.0625em) {
+	.ParentIntro .watchCharles .copy {
+		font-size: 26px;
+		line-height: 36px;
+	}
+}
+@media (max-width: 22.5em) {
+	.ParentIntro .watchCharles .copy {
+		font-size: 21px;
+		line-height: 30px;
+	}
+}
+
+/*-- END PARENTINTRO SECTION --*/
+
 /*-- START TOP FOUR SECTION  --*/
+.books_top4 {
+	max-width: 1000px;
+}
 .top4_bg, .video_bg {
-	background: url("/wearekoch/media/KOCHstoriesV2/CGK/top4_bg.png") center center, repeat;
-	background-size: 100%;
-	padding: 10rem 0;
+	background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/Texture_Pattern.jpg") center center, repeat;
+	padding: 6rem 0;
 	position: relative;
 	text-align: center;
 	/*--481--*/
@@ -1079,20 +1291,20 @@ header {
 }
 @media (max-width: 100em) {
 	.top4_bg, .video_bg {
-		background: url("/wearekoch/media/KOCHstoriesV2/CGK/top4_bg1800.png") center center, repeat;
-		background-size: 100%;
+		/*background: url("/wearekoch/media/KOCHstoriesV2/CGK/top4_bg1800.png") center center, repeat;
+		background-size: 100%;*/
 	}
 }
 @media (max-width: 64em) {
 	.top4_bg, .video_bg {
-		background: url("/wearekoch/media/KOCHstoriesV2/CGK/top4_bg1024.png") center center, repeat;
-		background-size: 100%;
+		/*background: url("/wearekoch/media/KOCHstoriesV2/CGK/top4_bg1024.png") center center, repeat;
+		background-size: 100%;*/
 	}
 }
 @media (max-width: 48em) {
 	.top4_bg, .video_bg {
-		background: url("/wearekoch/media/KOCHstoriesV2/CGK/top4_bg768.png") center center, repeat;
-		background-size: 100%;
+		/*background: url("/wearekoch/media/KOCHstoriesV2/CGK/top4_bg768.png") center center, repeat;
+		background-size: 100%;*/
 		padding: 6rem 0;
 	}
 }
@@ -1122,7 +1334,7 @@ header {
 	/* CGK Top Four Copy: */
 	
 	font-family: "proxima-nova", sans-serif;
-	font-weight: 800;
+	font-weight: 600;
 	font-size: 70px;
 	letter-spacing: 0px;
 	/*--481--*/
@@ -1207,9 +1419,10 @@ header {
 	/* AUDIO: */
 	
 	font-family: "proxima-nova", sans-serif;
-	font-weight: 800;
+	font-weight: 600;
 	font-size: 14px;
 	line-height: 24px;
+	margin-bottom: 0;
 }
 .top4_bg .quadBlock .quadInfo .profile_Desc {
 	color: #ffffff;
@@ -1217,6 +1430,7 @@ header {
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 24px;
+	margin-top: 0;
 }
 .close {
 	z-index: 10001;
@@ -1303,7 +1517,7 @@ header {
 	box-shadow: 15px 0px 100px 15px rgba(0, 0, 0, 0.2);
 }
 .blackout .blackout_inner .popupNav {
-	background: url("/wearekoch/media/KOCHstoriesV2/CGK/top4_bg.png") center center, no-repeat;
+	background: url("/wearekoch/media/KOCHstoriesV2/CGK/Texture_Pattern.jpg") center center, no-repeat;
 	background-size: cover;
 	height: 84px;
 	width: 100%;
@@ -1338,7 +1552,7 @@ header {
 	/* < PREVIOUS: */
 	
 	font-family: "proxima-nova", sans-serif;
-	font-weight: 800;
+	font-weight: 600;
 	font-size: 14px;
 	color: #2F2A2B;
 	text-transform: uppercase;
@@ -1349,7 +1563,113 @@ header {
 
 /*-- END TOP FOUR SECTION --*/
 
+/*-- START VIDEO TILE SECTION --*/
+.videos {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0;
+}
+.video-tile {
+	display: inline-block;
+	width: calc(50% - 1.2rem);
+	margin: 1rem 0.5rem;
+	padding: 0;
+	transition: all 0.2s ease-in-out;
+}
+.video-tile:hover {
+	transform: scale(1.02);
+}
+.tile-img {
+	position: relative;
+}
+.tile-img .play_cta {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.tile-img > img {
+	display: block;
+	max-width: 550px;
+	max-height: 550px;
+	width: 100%;
+}
+.tile-copy {
+	background-color: #2F2A2B;
+}
+.tile-copy h3 {
+	margin: 0;
+	padding: 2rem 1.5rem 0.5rem 1.5rem;
+	color: #bbb272;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	text-align: left;
+}
+.tile-copy p {
+	margin: 0;
+	padding: 0 1.5rem 3rem;
+	color: #fff;
+	font-size: 1.1rem;
+	text-align: left;
+	line-height: 1.2;
+}
+@media(max-width: 40rem) {
+	.video-tile {
+		margin: 1rem 2rem;
+		width: calc(100% - 4rem);
+		display: block;
+	}
+}
+
+/*-- END VIDEO TILE SECTION --*/
+
 /*-- START TOP TEN SECTION  --*/
+.parenthood_img {
+	width: 100%;
+	background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/parenthoodImg1800.png") center center, no-repeat;
+	background-size: cover;
+	height: 550px;
+	/*--481--*/
+	/*--481--*/
+	/*--481--*/
+	/*--481--*/
+	/*--481--*/
+}
+@media (max-width: 112.5em) {
+	.parenthood_img {
+		background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/parenthoodImg1800.png") center center, no-repeat;
+		background-size: cover;
+		height: 550px;
+	}
+}
+@media (max-width: 75em) {
+	.parenthood_img {
+		background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/parenthoodImg1800.png") center center, no-repeat;
+		background-size: cover;
+		height: 450px;
+	}
+}
+@media (max-width: 48em) {
+	.parenthood_img {
+		background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/parenthoodImg1800.png") center center, no-repeat;
+		background-size: cover;
+		height: 300px;
+	}
+}
+@media (max-width: 30.0625em) {
+	.parenthood_img {
+		background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/parenthoodImg1800.png") center center, no-repeat;
+		background-size: cover;
+		height: 240px;
+	}
+}
+@media (max-width: 23.75em) {
+	.parenthood_img {
+		height: 220px;
+	}
+}
+
 .bookshelf_img {
 	width: 100%;
 	background: url("/wearekoch/media/KOCHstoriesV2/CGK/bookshelf.jpg") center center, no-repeat;
@@ -1417,7 +1737,7 @@ header {
 .ten_more h1 {
 	text-align: left;
 	font-family: "proxima-nova", sans-serif;
-	font-weight: 800;
+	font-weight: 600;
 	font-size: 70px;
 	letter-spacing: 0px;
 	color: #2F2A2B;
@@ -1503,6 +1823,7 @@ header {
 	letter-spacing: 0px;
 	line-height: 24px;
 	margin-left: 1rem;
+	margin-top: 0;
 	-webkit-transition: all ease .5s;
 	transition: all ease .5s;
 }
@@ -1527,8 +1848,88 @@ header {
 .ten_more .showLess .fa-chevron-circle-up:before {
 	color: #BBB272;
 }
+
+.family-principles {
+	width: 100%;
+	max-width: 1050px;
+	margin: 0 auto;
+	padding: 10rem 2rem 5rem;
+}
+@media (max-width: 64em) {
+	.family-principles {
+		padding: 10rem 2rem 5rem;
+	}
+}
+@media (max-width: 48em) {
+	.family-principles {
+		padding: 5rem 2rem;
+	}
+}
+@media (max-width: 37.5625em) {
+	.family-principles {
+		padding: 3rem 2rem;
+	}
+}
+.family-principles h1 {
+	text-align: left;
+	font-family: "proxima-nova", sans-serif;
+	font-weight: 600;
+	font-size: 70px;
+	letter-spacing: 0px;
+	line-height: 1.25;
+	color: #2F2A2B;
+	/*--481--*/
+	/*--481--*/
+}
+@media (max-width: 48em) {
+	.family-principles h1 {
+		font-size: 36px;
+	}
+}
+@media (max-width: 23.75em) {
+	.family-principles h1 {
+		font-size: 24px;
+	}
+}
+.familyList {
+	width: 100%;
+	max-width: 1200px;
+	margin: 3rem auto;
+}
+.familyList li {
+	margin: 1rem 0;
+}
+.familyList h2 {
+	display: inline;
+	color: #BBB272;
+	font-size: 2.25rem;
+	font-weight: 600;
+	margin: 0;
+	font-family: museo-slab, serif;
+}
+.familyList p {
+	display: inline;
+	color: #444;
+	font-size: 1.5rem;
+	font-weight: 300;
+	font-family: museo-slab, serif;
+	padding-left: 0.3rem;
+}
+@media(max-width: 64rem) {
+	.familyList h2 {
+		font-size: 1.5rem
+	}
+	.familyList p {
+		font-size: 1.25rem;
+	}
+}
+@media(max-width: 40rem) {
+	.familyList p {
+		font-size: 1rem;
+	}
+}
 .texture {
-	background: url("/wearekoch/media/KOCHstoriesV2/CGK/top4_bg.png") center center, no-repeat;
+	background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/Texture_Pattern.jpg") center center, no-repeat;
 	background-size: 100%;
 	position: relative;
 	text-align: center;
@@ -1560,7 +1961,7 @@ header {
 /*-- START TOP TEN SECTION  --*/
 .moreInfo {
 	width: 100%;
-	background: url("/wearekoch/media/KOCHstoriesV2/CGK/moreInfo.jpg") center center, no-repeat;
+	background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/moreInfo.jpg") center center, no-repeat;
 	background-size: cover;
 	padding: 5rem 0;
 	position: relative;
@@ -1570,14 +1971,14 @@ header {
 }
 @media (max-width: 100em) {
 	.moreInfo {
-		background: url("/wearekoch/media/KOCHstoriesV2/CGK/moreInfo1800.jpg") center center, no-repeat;
-		background-size: cover;
+		/*background: url("/wearekoch/media/KOCHstoriesV2/CGK/moreInfo1800.jpg") center center, no-repeat;
+		background-size: cover;*/
 	}
 }
 @media (max-width: 37.5625em) {
 	.moreInfo {
-		background: none;
-		background-color: #2F2A2B;
+		/*background: none;
+		background-color: #2F2A2B;*/
 	}
 }
 .moreInfo .v2-col-2-left {
