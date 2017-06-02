@@ -890,6 +890,8 @@ header {
 	right: 5%;
 	top: -1rem;
 	width: 90%;
+	z-index: -1;
+	opacity: 0.6;
 	max-width: 1000px;
 }
 .cgk-bio {
@@ -1174,7 +1176,7 @@ header {
 
 /*-- START PARENTINTRO SECTION  --*/
 .ParentIntro {
-	background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/parentintro1800.png") center center, no-repeat;
+	background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/Main_Video.jpeg") center center, no-repeat;
 	background-size: cover;
 	padding: 5rem 0;
 	position: relative;
@@ -1187,26 +1189,26 @@ header {
 }
 @media (max-width: 100em) {
 	.ParentIntro {
-		background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/parentintro1800.png") center center, no-repeat;
-		background-size: cover;
+		/*background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/parentintro1800.png") center center, no-repeat;
+		background-size: cover;*/
 	}
 }
 @media (max-width: 75em) {
 	.ParentIntro {
-		background: url("/wearekoch/media/KOCHstoriesV2/CGK/bookIntro1200.jpg") center center, no-repeat;
-		background-size: cover;
+		/*background: url("/wearekoch/media/KOCHstoriesV2/CGK/bookIntro1200.jpg") center center, no-repeat;
+		background-size: cover;*/
 	}
 }
 @media (max-width: 64em) {
 	.ParentIntro {
-		background: url("/wearekoch/media/KOCHstoriesV2/CGK/bookIntro1024.jpg") center center, no-repeat;
-		background-size: cover;
+		/*background: url("/wearekoch/media/KOCHstoriesV2/CGK/bookIntro1024.jpg") center center, no-repeat;
+		background-size: cover;*/
 	}
 }
 @media (max-width: 48em) {
 	.ParentIntro {
-		background: url("/wearekoch/media/KOCHstoriesV2/CGK/bookIntro768.png") center center, no-repeat;
-		background-size: cover;
+		/*background: url("/wearekoch/media/KOCHstoriesV2/CGK/bookIntro768.png") center center, no-repeat;
+		background-size: cover;*/
 		height: 85vh;
 	}
 }
@@ -1627,7 +1629,7 @@ header {
 /*-- START TOP TEN SECTION  --*/
 .parenthood_img {
 	width: 100%;
-	background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/parenthoodImg1800.png") center center, no-repeat;
+	background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/LizKoch_SleepingKids.jpg") center center, no-repeat;
 	background-size: cover;
 	height: 550px;
 	/*--481--*/
@@ -1638,29 +1640,29 @@ header {
 }
 @media (max-width: 112.5em) {
 	.parenthood_img {
-		background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/parenthoodImg1800.png") center center, no-repeat;
-		background-size: cover;
+		/*background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/parenthoodImg1800.png") center center, no-repeat;
+		background-size: cover;*/
 		height: 550px;
 	}
 }
 @media (max-width: 75em) {
 	.parenthood_img {
-		background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/parenthoodImg1800.png") center center, no-repeat;
-		background-size: cover;
+		/*background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/parenthoodImg1800.png") center center, no-repeat;
+		background-size: cover;*/
 		height: 450px;
 	}
 }
 @media (max-width: 48em) {
 	.parenthood_img {
-		background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/parenthoodImg1800.png") center center, no-repeat;
-		background-size: cover;
+		/*background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/parenthoodImg1800.png") center center, no-repeat;
+		background-size: cover;*/
 		height: 300px;
 	}
 }
 @media (max-width: 30.0625em) {
 	.parenthood_img {
-		background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/parenthoodImg1800.png") center center, no-repeat;
-		background-size: cover;
+		/*background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/parenthoodImg1800.png") center center, no-repeat;
+		background-size: cover;*/
 		height: 240px;
 	}
 }
