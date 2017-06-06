@@ -310,7 +310,7 @@ header {
 /*-- START cgkONbar_home --*/
 
 .cgkONbar_home {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	z-index: 1000;
 	width: 100%;
@@ -678,7 +678,7 @@ header {
 	.articles {
 		padding: 4rem 2rem;
 	}
-	.articles a {
+	.articles a, .article-tile.unpublished  {
 		display: inline-block;
 		width: calc(50% - 1rem);
 		margin: 0 0.5rem;
@@ -693,7 +693,7 @@ header {
 	.homeSubheader {
 		font-size: 1.75rem;
 	}
-	.articles a {
+	.articles a, .article-tile.unpublished  {
 		width: 100%;
 		margin: 0;
 	}
@@ -796,6 +796,12 @@ header {
 @media(max-width: 75em) {
 	.home_story_intro {
 		padding: 0 2rem;
+	}
+	.article-tile:hover {
+		transform: none;
+	}
+	.article-tile:hover::before {
+		display: none;
 	}
 }
 @media(max-width: 40rem) {
@@ -929,7 +935,6 @@ header {
 	top: -1rem;
 	width: 90%;
 	z-index: -1;
-	opacity: 0.6;
 	max-width: 1000px;
 }
 .cgk-bio {
@@ -1656,7 +1661,8 @@ header {
 }
 @media(max-width: 40rem) {
 	.video-tile {
-		margin: 1rem 2rem;
+		margin: 0 2rem;
+		margin-bottom: 1rem;
 		width: calc(100% - 4rem);
 		display: block;
 	}
