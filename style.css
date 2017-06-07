@@ -4,6 +4,13 @@
 @import url("../../KOCHstoriesV2/social.css");
 @import url("../../KOCHstoriesV2/video.css");
 
+/*Do not include in build*/
+/**, *:before, *:after { 	
+	-moz-box-shadow: 0 0 5px rgba(255,157,24,.5);
+ 	-webkit-box-shadow: 0 0 5px rgba(255,157,24,.5);
+	box-shadow: 0 0 5px rgba(255,157,24,.5);
+} */
+
 /*--BREAKPOINTS--*/
 
 
@@ -949,7 +956,6 @@ header {
 .watermark {
 	position: relative;
 	height: 2rem;
-	overflow: hidden;
 }
 .watermark img {
 	position: absolute;
@@ -963,6 +969,7 @@ header {
 	.watermark {
 		position: static;
 		height: auto;
+		overflow: hidden;
 	}
 	.watermark img {
 		position: relative;
@@ -1460,6 +1467,8 @@ header {
 .video_bg .subText {
 	max-width: 850px;
 	font-weight: 300;
+	font-size: 1.7rem;
+	line-height: 1.5;
 }
 @media (max-width: 48em) {
 	.top4_bg .subText, .video_bg .subText {
@@ -1697,7 +1706,7 @@ header {
 }
 .tile-copy p {
 	margin: 0;
-	padding: 0 1.5rem 3rem;
+	padding: 0 1.5rem 2rem;
 	color: #fff;
 	font-size: 1.1rem;
 	text-align: left;
@@ -1947,8 +1956,8 @@ header {
 	width: 100%;
 	max-width: 1050px;
 	margin: 0 auto;
-	padding: 10rem 2rem 5rem;
-	max-height: 1500px;
+	padding: 5rem 2rem;
+	max-height: 1400px;
 	overflow: hidden;
 }
 .block-1 img {
@@ -1963,12 +1972,12 @@ header {
 	left: 45%;
 }
 .block-3 {
-	width: 30%;
+	width: 23%;
 	position: absolute;
-	right: 20%;
+	right: 27%;
 }
 .block-3 h3 {
-	font-size: 1.8rem;
+	font-size: 2rem;
 	margin: 0;
 }
 .block-3 h3::before {
@@ -1977,12 +1986,9 @@ header {
 	color: #BBB272;
 	position: absolute;
 	left: -1rem;
-	top: 0;
-}
-.block-3 h3 .quoteSource {
-	display: block;
-	float: right;
-	margin-right: 2rem;
+	top: -0.25rem;
+	font-size: 2rem;
+	font-weight: 600;
 }
 .block-4 img {
 	width: 30%;
@@ -2025,7 +2031,7 @@ header {
 		max-height: none;
 	}
 	.family-principles, .family {
-		padding: 10rem 2rem 5rem;
+		padding: 5rem 2rem;
 	}
 }
 @media (max-width: 48em) {
@@ -2053,7 +2059,179 @@ header {
 		padding:0 2rem;
 	}
 }
-.family-principles h1 {
+
+.block-1.swing-out,
+.block-2.swing-out,
+.block-3.swing-out,
+.block-4.swing-out,
+.block-5.swing-out { 
+  opacity:0; 
+}
+/* .block-1,
+.block-2,
+.block-3,
+.block-4 {
+  opacity:0; 
+} */
+
+.block-1.swing-down {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1.25s;
+  animation-duration: 1.25s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.block-2.swing-left {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s; 
+}
+.block-3.swing-right {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.block-4.swing-down {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1.25s;
+  animation-duration: 1.25s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.block-5.swing-up {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 1.25s;
+  animation-duration: 1.25s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+
+
+
+
+
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-10%, -100%, 0);
+    transform: translate3d(-10%, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-10%, -100%, 0);
+    transform: translate3d(-10%, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(10%, 100%, 0);
+    transform: translate3d(10%, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(10%, 100%, 0);
+    transform: translate3d(10%, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+
+/*.family-principles h1 {
 	text-align: left;
 	font-family: "proxima-nova", sans-serif;
 	font-weight: 600;
@@ -2061,8 +2239,6 @@ header {
 	letter-spacing: 0px;
 	line-height: 1.25;
 	color: #2F2A2B;
-	/*--481--*/
-	/*--481--*/
 }
 @media (max-width: 48em) {
 	.family-principles h1 {
@@ -2110,7 +2286,7 @@ header {
 	.familyList p {
 		font-size: 1rem;
 	}
-}
+}*/
 .texture {
 	background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/Texture_Pattern.jpg") center center, no-repeat;
 	background-size: 100%;
@@ -2328,4 +2504,33 @@ header {
 }
 footer {
 	display: block;
+}
+.close_button {
+	position: absolute;
+	z-index: 200;
+	right: 2em;
+	top: 2em;
+	height: 25px;
+	width: 25px;
+	cursor: pointer;
+}
+.close_button div::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	height: .1875rem;
+	width: 105%;
+	background-color: #ffffff;
+	transform: rotate(45deg);
+}
+.close_button div::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	height: .1875rem;
+	width: 105%;
+	background-color: #ffffff;
+	transform: rotate(-45deg);
 }
