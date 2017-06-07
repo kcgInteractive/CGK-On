@@ -474,7 +474,7 @@ header {
 }
 @media (max-width: 30.0625em) {
 	.cgkHeader {
-		height: 110vh;
+		height: 100vh;
 	}
 }
 .cgkHeader .downArrow {
@@ -487,6 +487,11 @@ header {
 }
 .cgkHeader .downArrow .fa {
 	font-size: 1.56rem;
+}
+@media(max-width: 40rem) {
+	.cgkHeader .downArrow {
+		display: none;
+	}
 }
 .cgkOn {
 	padding: 0 0 5rem;
@@ -693,10 +698,18 @@ header {
 	.homeSubheader {
 		font-size: 1.75rem;
 	}
-	.articles a, .article-tile.unpublished  {
+	.articles {
+		padding: 2rem;
+	}
+	.articles a {
 		width: 100%;
 		margin: 0;
 	}
+	.article-tile.unpublished {
+		width: 100%;
+		margin: 1rem 0;
+	}
+
 }
 .article-tile::before {
 	opacity: 0;
@@ -806,7 +819,7 @@ header {
 }
 @media(max-width: 40rem) {
 	.home_story_intro {
-		margin-top: 8rem;
+		margin-top: 6rem;
 	}
 }
 .email-form {
@@ -901,6 +914,14 @@ header {
 	.email-input input{
 		width: 100%;
 	}
+	.submit-button {
+		width: 100%;
+	}
+	.submit-button input {
+		display: block;
+		width: 120px;
+		margin: 0 auto;
+	}
 }
 .moreInfo .email-form {
 	background: transparent;
@@ -928,6 +949,7 @@ header {
 .watermark {
 	position: relative;
 	height: 2rem;
+	overflow: hidden;
 }
 .watermark img {
 	position: absolute;
@@ -936,6 +958,19 @@ header {
 	width: 90%;
 	z-index: -1;
 	max-width: 1000px;
+}
+@media(max-width: 40rem) {
+	.watermark {
+		position: static;
+		height: auto;
+	}
+	.watermark img {
+		position: relative;
+		top: 1rem;
+		left: 0;
+		margin: 0;
+		width: 125%;
+	}
 }
 .cgk-bio {
 	max-width: 1200px;
@@ -977,11 +1012,17 @@ header {
 	}
 }
 @media(max-width: 40rem) {
+	.cgk-bio {
+		padding-top: 0;
+	}
 	.bio-img, .bio-copy {
 		display: block;
 		width: 100%;
 		float: none;
 		padding: 0;
+	}
+	.bio-copy h3 {
+		margin-top: 1rem;
 	}
 }
 
@@ -1034,7 +1075,7 @@ header {
 }
 @media (max-width: 23.75em) {
 	.story_intro {
-		top: 50%;
+		top: 45%;
 	}
 }
 .story_intro .cgkQuotes {
@@ -1165,7 +1206,7 @@ header {
 }
 .bookIntro .watchCharles .play_cta {
 	margin-top: 0;
-	width: 115px;
+	width: 100px;
 	cursor: pointer;
 	-webkit-transition: opacity ease .5s;
 	transition: opacity ease .5s;
@@ -1250,9 +1291,10 @@ header {
 }
 @media (max-width: 48em) {
 	.ParentIntro {
-		/*background: url("/wearekoch/media/KOCHstoriesV2/CGK/bookIntro768.png") center center, no-repeat;
-		background-size: cover;*/
+		background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/Parenthood_Mobile.jpeg") center top, no-repeat;
+		background-size: cover;
 		height: 85vh;
+		margin-top: 690px;
 	}
 }
 .ParentIntro .watchCharles {
@@ -1268,7 +1310,7 @@ header {
 }
 .ParentIntro .watchCharles .play_cta {
 	margin-top: 0;
-	width: 115px;
+	width: 100px;
 	cursor: pointer;
 	-webkit-transition: opacity ease .5s;
 	transition: opacity ease .5s;
@@ -1350,12 +1392,12 @@ header {
 	.top4_bg, .video_bg {
 		/*background: url("/wearekoch/media/KOCHstoriesV2/CGK/top4_bg768.png") center center, repeat;
 		background-size: 100%;*/
-		padding: 6rem 0;
+		padding: 2rem 0;
 	}
 }
 @media (max-width: 37.5625em) {
 	.top4_bg, .video_bg {
-		padding: 6rem 0 0;
+		padding: 2rem 0;
 	}
 }
 .top4_bg .max_width_container {
@@ -1389,6 +1431,7 @@ header {
 @media (max-width: 48em) {
 	.top4_bg h1, .video_bg h1 {
 		font-size: 56px;
+		text-align: center;
 	}
 }
 @media (max-width: 30.0625em) {
@@ -1410,7 +1453,7 @@ header {
 	line-height: 50px;
 	max-width: 650px;
 	margin: 0 auto;
-	padding: 2rem 0 4rem;
+	padding: 2rem 0 2.5rem;
 	/*--481--*/
 	/*--481--*/
 }
@@ -1421,6 +1464,7 @@ header {
 @media (max-width: 48em) {
 	.top4_bg .subText, .video_bg .subText {
 		font-size: 24px;
+		text-align: center;
 	}
 }
 @media (max-width: 30.0625em) {
@@ -1662,9 +1706,13 @@ header {
 @media(max-width: 40rem) {
 	.video-tile {
 		margin: 0 2rem;
-		margin-bottom: 1rem;
+		margin-bottom: 2rem;
 		width: calc(100% - 4rem);
 		display: block;
+	}
+	.tile-copy p {
+		padding: 0 1.5rem 2rem;
+		font-size: 1rem;
 	}
 }
 
@@ -1895,25 +1943,114 @@ header {
 	color: #BBB272;
 }
 
-.family-principles {
+.family-principles, .family {
 	width: 100%;
 	max-width: 1050px;
 	margin: 0 auto;
 	padding: 10rem 2rem 5rem;
+	max-height: 1500px;
+	overflow: hidden;
 }
+.block-1 img {
+	width: 50%;
+	position: relative;
+	left: 10%;
+}
+.block-2 img {
+	width: 50%;
+	position: relative;
+	top: -4rem;
+	left: 45%;
+}
+.block-3 {
+	width: 30%;
+	position: absolute;
+	right: 20%;
+}
+.block-3 h3 {
+	font-size: 1.8rem;
+	margin: 0;
+}
+.block-3 h3::before {
+	content: "\201C";
+	font-weight: 400;
+	color: #BBB272;
+	position: absolute;
+	left: -1rem;
+	top: 0;
+}
+.block-3 h3 .quoteSource {
+	display: block;
+	float: right;
+	margin-right: 2rem;
+}
+.block-4 img {
+	width: 30%;
+	position: relative;
+	top: -15rem;
+	z-index: 1;
+}
+.block-5 img {
+	width: 60%;
+	position: relative;
+	left: 25%;
+	top: -19rem;
+	z-index: 0;
+}
+
 @media (max-width: 64em) {
-	.family-principles {
+	.block-1, .block-2, .block-4, .block-5 {
+		display: inline-block;
+		width: 49%;
+	}
+	.block-3 {
+		position: static;
+		width: 50%;
+		float: right;
+		padding: 2rem;
+		margin: 5rem 0;
+	}
+	.block-4 {
+		float: left;
+	}
+	.block-5 {
+		float: right;
+	}
+	.block-1 img, .block-2 img, .block-4 img, .block-5 img{
+		position: static;
+		padding: 2rem;
+		width: 100%;
+	}
+	.family {
+		max-height: none;
+	}
+	.family-principles, .family {
 		padding: 10rem 2rem 5rem;
 	}
 }
 @media (max-width: 48em) {
-	.family-principles {
+	.block-1, .block-2, .block-4, .block-5 {
+		width: 100%;
+	}
+	.block-3 {
+		width: 100%;
+		margin: 1rem 0;
+	}
+	.block-3 h3 {
+		width: 100%;
+		max-width: 450px;
+		margin: 0 auto;
+	}
+	.family-principles, .family {
 		padding: 5rem 2rem;
 	}
 }
 @media (max-width: 37.5625em) {
-	.family-principles {
-		padding: 3rem 2rem;
+	.block-1 img, .block-2 img, .block-4 img, .block-5 img{
+		padding: 2rem 0;
+	}
+	.family-principles, .family {
+		padding:0 2rem;
 	}
 }
 .family-principles h1 {
@@ -2023,6 +2160,7 @@ header {
 }
 @media (max-width: 37.5625em) {
 	.moreInfo {
+		padding: 2rem 0;
 		/*background: none;
 		background-color: #2F2A2B;*/
 	}
