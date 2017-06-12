@@ -256,7 +256,7 @@ header {
 }
 
 .author {
-	font-family: museo-slab, serif;
+	font-family: "museo-slab",serif;
 	font-weight: 400;
 	font-size: 16px;
 }
@@ -363,7 +363,7 @@ header {
 	font-size: 1.6rem;
 }
 .cgkONbar_home .cgkOn h4 {
-	font-family: museo-slab, serif;
+	font-family: "museo-slab",serif;
 	color: #bbb272;
 	font-size: 0.9rem;
 	letter-spacing: 2px;
@@ -470,13 +470,14 @@ header {
 	.cgkHeader {
 		background: url("/wearekoch/media/KOCHstoriesV2/CGK/cgkHeader1024.jpg") top center, no-repeat;
 		background-size: cover;
+		position: absolute;
 	}
 }
 @media (max-width: 47.938em) {
 	.cgkHeader {
 		background: url("/wearekoch/media/KOCHstoriesV2/CGK/cgkHeader768.jpg") top center, no-repeat;
 		background-size: cover;
-		position: absolute;
+		
 	}
 }
 @media (max-width: 30.0625em) {
@@ -749,7 +750,7 @@ header {
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 1.75rem;
-	font-family: museo-slab, serif;
+	font-family: "museo-slab",serif;
 	color: #fff;
 	letter-spacing: -1px;
 	z-index: 3;
@@ -786,7 +787,7 @@ header {
 	float: right;
 	margin: 0.5rem 0 1.5rem 0;
 	font-size: 1.75rem;
-	font-family: museo-slab, serif;
+	font-family: "museo-slab",serif;
 	font-weight: bold;
 	color: #c0b26e;
 	transition: all 0.2s ease-in-out;
@@ -858,7 +859,7 @@ header {
 	width: 280px;
 	text-transform: uppercase;
 	text-align: right;
-	font-family: museo-slab, serif;
+	font-family: "museo-slab",serif;
 	font-size: 1rem;
 	font-weight: bold;
 	color: #fff;
@@ -879,7 +880,7 @@ header {
 	border: 1px solid white;
 	border-radius: 3px;
 	padding: 0.3rem 1.5rem;
-	font-family: museo-slab, serif;
+	font-family: "museo-slab",serif;
 	color: #2f2a26;
 }
 .email-input input:focus {
@@ -1003,7 +1004,7 @@ header {
 }
 .bio-copy h3 {
 	text-transform: uppercase;
-	font-family: museo-slab, serif;
+	font-family: "museo-slab",serif;
 	font-size: 1.3rem;
 	color: #BBB272;
 	margin: 0;
@@ -1233,7 +1234,7 @@ header {
 	vertical-align: middle;
 	width: 80%;
 	max-width: 600px;
-	font-family: museo-slab, serif;
+	font-family: "museo-slab",serif;
 	font-weight: 300;
 	font-size: 32px;
 	color: #FFFFFF;
@@ -1300,8 +1301,8 @@ header {
 	.ParentIntro {
 		background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/Parenthood_Mobile.jpeg") center top, no-repeat;
 		background-size: cover;
-		height: 85vh;
-		margin-top: 690px;
+		height: 70vh;
+		margin-top: 670px;
 	}
 }
 .ParentIntro .watchCharles {
@@ -1337,7 +1338,7 @@ header {
 	vertical-align: middle;
 	width: 80%;
 	max-width: 600px;
-	font-family: museo-slab, serif;
+	font-family: "museo-slab",serif;
 	font-weight: 300;
 	font-size: 32px;
 	color: #FFFFFF;
@@ -1454,13 +1455,14 @@ header {
 .top4_bg .subText, .video_bg .subText {
 	/* “These books are the: */
 	
-	font-family: museo-slab, serif;
+	font-family: "museo-slab",serif;
 	font-size: 36px;
 	color: #2F2A2B;
 	line-height: 50px;
 	max-width: 650px;
 	margin: 0 auto;
 	padding: 2rem 0 2.5rem;
+	font-weight: 300;
 	/*--481--*/
 	/*--481--*/
 }
@@ -1674,6 +1676,7 @@ header {
 	margin: 1rem 0.5rem;
 	padding: 0;
 	transition: all 0.2s ease-in-out;
+	vertical-align: top;
 }
 .video-tile:hover {
 	transform: scale(1.02);
@@ -1712,12 +1715,20 @@ header {
 	text-align: left;
 	line-height: 1.2;
 }
+@media(max-width: 64rem) {
+	.tile-copy {
+		height: 175px;
+	}
+}
 @media(max-width: 40rem) {
 	.video-tile {
 		margin: 0 2rem;
 		margin-bottom: 2rem;
 		width: calc(100% - 4rem);
 		display: block;
+	}
+	.tile-copy {
+		height: auto;
 	}
 	.tile-copy p {
 		padding: 0 1.5rem 2rem;
@@ -1861,7 +1872,7 @@ header {
 	padding-left: 0;
 	text-align: left;
 	margin-top: 4rem;
-	font-family: museo-slab, serif;
+	font-family: "museo-slab",serif;
 	font-weight: 600;
 	font-size: 18px;
 	letter-spacing: 0px;
@@ -1934,7 +1945,7 @@ header {
 .ten_more .showLess {
 	cursor: pointer;
 	text-align: left;
-	font-family: museo-slab, serif;
+	font-family: "museo-slab",serif;
 	font-weight: 400;
 	font-size: 24px;
 	letter-spacing: 0px;
@@ -2114,7 +2125,11 @@ header {
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
 }
-
+@media(max-width: 48rem) {
+  .block-1.swing-down, .block-2.swing-left, .block-3.swing-right, .block-4.swing-down, .block-5.swing-up {
+  	animation: none !important;
+  }
+}
 
 
 
@@ -2264,14 +2279,14 @@ header {
 	font-size: 2.25rem;
 	font-weight: 600;
 	margin: 0;
-	font-family: museo-slab, serif;
+	font-family: "museo-slab",serif;
 }
 .familyList p {
 	display: inline;
 	color: #444;
 	font-size: 1.5rem;
 	font-weight: 300;
-	font-family: museo-slab, serif;
+	font-family: "museo-slab",serif;
 	padding-left: 0.3rem;
 }
 @media(max-width: 64rem) {

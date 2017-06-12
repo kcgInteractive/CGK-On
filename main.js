@@ -443,6 +443,7 @@ function ChangeTextColorOfLink(element, newColor){
 			.add(playCTA)
 			.add(textLinkPlay)
 			.click( function(event) {
+				var clicked = $(this);
               
 				var videoID = $(this).attr("video-id");
                 //new option of assined player-id for JWPlayer Custom Players  
@@ -483,11 +484,19 @@ function ChangeTextColorOfLink(element, newColor){
               function videoDirectEmbed(){
                 fullScreenVideoContainer2.fadeToggle();
                 //alert(videoURL);
+                var aspect;
+                if(clicked.hasClass('241')) {
+                	aspect = '2.4:1';
+                }else {
+                	aspect = '16:9';
+                }
+
                 jwplayer("jwvid").setup({
                   file: videoURL,
-                  aspectratio:'2.4:1',
+                  aspectratio: aspect,
                   width:'80%'
                 });
+
               };
               ///////////////////////////////////////////////////
               function iframeEmbed(){
