@@ -289,7 +289,7 @@ header {
 	/*--767--*/
 }
 
-@media (max-width: 47.938em) {
+@media (max-width: 48em) {
 	.cgkONbar {
 		padding-top: 0;
 		height: 3.5em;
@@ -908,10 +908,11 @@ header {
 	color: #fff;
 	background-color: #2f2a26;
 }
-@media(max-width: 40rem) {
+@media(max-width: 48rem) {
 	.email-inner {
-		margin: 0 2rem;
-		width: auto;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 350px;
 	}
 	.email-form p {
 		width: auto;
@@ -1303,20 +1304,12 @@ header {
 		background-size: cover;*/
 	}
 }
-@media (max-width: 48em) {
-	.ParentIntro {
-		/*background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/Parenthood_Mobile.jpg") center top, no-repeat;*/
-		background-size: cover;
-		height: 360px; /*P.P. Page - decrease height of the family photo section*/
-		/*margin-top: 100vh; */ 
-	}
-}
 @media (max-width: 47.938em) {
 	.ParentIntro {
 		background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/Parenthood_Mobile.jpg") center top, no-repeat;
 		background-size: cover;
 		height: 70vh;
-		margin-top: 100vh; 
+		margin-top: 100vh;
 	}
 }
 .ParentIntro .watchCharles {
@@ -1503,8 +1496,8 @@ header {
 }
 @media (max-width: 30.0625em) {
 	.top4_bg .subText, .video_bg .subText {
-		font-size: 24px;
-		line-height: 36px;
+		font-size: 20px;
+		line-height: 30px;
 	}
 }
 .top4_bg .quadBlock {
@@ -2094,10 +2087,10 @@ header {
 }
 @media (max-width: 37.5625em) {
 	.block-1 img, .block-2 img, .block-4 img, .block-5 img{
-		padding: 2rem 0;
+		padding: 1rem 0;
 	}
 	.family-principles, .family {
-		padding:0 2rem;
+		padding: 2rem;
 	}
 }
 
