@@ -1133,7 +1133,7 @@ header {
 .story_intro .cgkQuotes .afterQ {
 	/*--481--*/
 }
-@media (max-width: 37.5625em) {
+@media (max-width: 48em) {
 	.story_intro .cgkQuotes .afterQ {
 		display: block;
 		text-align: center;
