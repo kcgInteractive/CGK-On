@@ -1307,7 +1307,7 @@ header {
 	.ParentIntro {
 		background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/Parenthood_Mobile.jpg") center top, no-repeat;
 		background-size: cover;
-		height: 70vh;
+		height: 360px; /*P.P. Page - decrease height of the family photo section*/
 		margin-top: 100vh;
 	}
 }
@@ -1701,7 +1701,7 @@ header {
 }
 .tile-img .play_cta {
 	position: absolute;
-	top: 30%;
+	top: 22.5%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -2013,6 +2013,8 @@ header {
 	color: #BBB272;
 	position: absolute;
 	left: 50%; /* Collage quote add quotation mark. Just the left quote */
+    right: 50%;
+    transform: translateX(-50%);
 	top: -2.25rem; /* Collage quote add quotation mark. Just the left quote */
 	font-size: 4rem; /* Collage quote add quotation mark. Just the left quote */
 	font-weight: 700;
