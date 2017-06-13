@@ -1757,12 +1757,12 @@ header {
 @media(max-width: 64rem) {
 	.tile-copy {
 		/*height: 175px;*/
-		font-size: 1rem;
+		font-size: 1rem; 
 	}
 }
 @media(max-width: 40rem) {
 	.video-tile {
-		margin: 0 2rem;
+		margin: 0 2rem; 
 		margin-bottom: 2rem;
 		width: calc(100% - 4rem);
 		display: block;
