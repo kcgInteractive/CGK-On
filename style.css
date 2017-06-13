@@ -319,7 +319,7 @@ header {
 	background: rgba(0, 0, 0, 0.8);
 	padding-top: 0;
 	height: 3.5rem;
-}
+} 
 /*-- START cgkONbar_home --*/
 
 .cgkONbar_home {
@@ -353,7 +353,7 @@ header {
 }
 .cgkONbar_home .home_inner {
 	padding: 3rem 0;
-	border-bottom: 2px solid #bbb272;
+	/*border-bottom: 2px solid #bbb272;*/
 }
 @media(max-width: 75em) {
 	.cgkONbar_home .home_inner {
