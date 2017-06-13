@@ -1762,7 +1762,7 @@ header {
 }
 @media(max-width: 40rem) {
 	.video-tile {
-		margin: 0 2rem;
+		margin: 0 2rem; 
 		margin-bottom: 2rem;
 		width: calc(100% - 4rem);
 		display: block;
