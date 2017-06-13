@@ -1300,7 +1300,7 @@ header {
 		background-size: cover;*/
 	}
 }
-@media (max-width: 75em) {
+@media (max-width: 75em) { 
 	.ParentIntro {
 		/*background: url("/wearekoch/media/KOCHstoriesV2/CGK/bookIntro1200.jpg") center center, no-repeat;
 		background-size: cover;*/
