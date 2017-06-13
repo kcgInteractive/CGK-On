@@ -1382,7 +1382,7 @@ header {
 }
 @media (max-width: 48em) {
 	.ParentIntro .watchCharles .copy {
-		width: 100%;
+		width: 62%;
 		margin-left: 0;
 	}
 }
