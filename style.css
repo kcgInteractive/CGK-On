@@ -2021,6 +2021,7 @@ header {
 	right: 27%;
 }
 .block-3 h3 {
+	position: relative;
 	font-size: 2rem;
 	margin: 0;
 }
@@ -2082,10 +2083,11 @@ header {
 }
 @media (max-width: 48em) {
 	.block-1, .block-2, .block-4, .block-5 {
-		width: 100%;
+		/*width: 100%;*/
+		padding: 1rem;
 	}
 	.block-3 {
-		width: 100%;
+		/*width: 100%;*/
 		margin: 2rem 0 1rem; /* Collage quote add quotation mark. Just the left quote */
 	}
 	.block-3 h3 {
