@@ -1488,6 +1488,7 @@ header {
 }
 @media (max-width: 48em) {
 	.top4_bg .subText, .video_bg .subText {
+		max-width: 650px; /*P.P. Where the heart is, increase padding right and left for the paragraphy copy*/
 		font-size: 24px;
 		text-align: center;
 	}
@@ -2011,9 +2012,9 @@ header {
 	font-weight: 400;
 	color: #BBB272;
 	position: absolute;
-	left: -1rem;
-	top: -0.25rem;
-	font-size: 2rem;
+	left: 50%; /* Collage quote add quotation mark. Just the left quote */
+	top: -2.25rem; /* Collage quote add quotation mark. Just the left quote */
+	font-size: 4rem; /* Collage quote add quotation mark. Just the left quote */
 	font-weight: 700;
 }
 .block-4 img {
@@ -2066,15 +2067,19 @@ header {
 	}
 	.block-3 {
 		width: 100%;
-		margin: 1rem 0;
+		margin: 2rem 0 1rem; /* Collage quote add quotation mark. Just the left quote */
 	}
 	.block-3 h3 {
 		width: 100%;
 		max-width: 450px;
 		margin: 0 auto;
+		position: relative; /* Collage quote add quotation mark. Just the left quote */
+	}
+	.block-1 img, .block-2 img, .block-4 img, .block-5 img{
+		padding: 1rem 0; /*collage between photos, margin of 1rem*/
 	}
 	.family-principles, .family {
-		padding: 5rem 2rem;
+		padding: 2rem 2rem 0; /*Collage start and end, margin of 2rem*/
 	}
 }
 @media (max-width: 37.5625em) {
