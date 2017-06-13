@@ -1143,7 +1143,7 @@ header {
 	}
 }
 .story_intro .cgkQuotes:before {
-	content: "\201C";
+	content: "\201C"; 
 	font-weight: 400;
 	color: #BBB272;
 	position: absolute;
