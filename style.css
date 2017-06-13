@@ -477,7 +477,7 @@ header {
 	.cgkHeader {
 		background: url("/wearekoch/media/KOCHstoriesV2/CGK/cgkHeader768.jpg") top center, no-repeat;
 		background-size: cover;
-		
+		height: 100vh;
 	}
 }
 @media (max-width: 30.0625em) {
@@ -1302,7 +1302,7 @@ header {
 		background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/Parenthood_Mobile.jpeg") center top, no-repeat;
 		background-size: cover;
 		height: 70vh;
-		margin-top: 670px;
+		margin-top: 100vh;
 	}
 }
 .ParentIntro .watchCharles {
