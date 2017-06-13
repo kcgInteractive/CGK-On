@@ -1142,6 +1142,14 @@ header {
 		line-height: 0;
 		padding-top: 3rem;
 	}
+	.gold .afterQ {
+		display: block;
+		text-align: center;
+		font-size: 100px;
+		line-height: 0;
+		padding-top: 3rem;
+		font-size: 5rem;
+	}
 }
 .story_intro .cgkQuotes:before {
 	content: "\201C"; 
@@ -1292,7 +1300,7 @@ header {
 		background-size: cover;*/
 	}
 }
-@media (max-width: 75em) {
+@media (max-width: 75em) { 
 	.ParentIntro {
 		/*background: url("/wearekoch/media/KOCHstoriesV2/CGK/bookIntro1200.jpg") center center, no-repeat;
 		background-size: cover;*/
@@ -1302,6 +1310,14 @@ header {
 	.ParentIntro {
 		/*background: url("/wearekoch/media/KOCHstoriesV2/CGK/bookIntro1024.jpg") center center, no-repeat;
 		background-size: cover;*/
+	}
+}
+@media (max-width: 48em) {
+	.ParentIntro {
+		/*background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/Parenthood_Mobile.jpg") center top, no-repeat;*/
+		background-size: cover;
+		height: 360px;
+		/*margin-top: 100vh;*/
 	}
 }
 @media (max-width: 47.938em) {
@@ -2013,11 +2029,11 @@ header {
 	font-weight: 400;
 	color: #BBB272;
 	position: absolute;
-	left: 50%; /* Collage quote add quotation mark. Just the left quote */
+	left: 47.5%; /* Collage quote add quotation mark. Just the left quote */
     right: 50%;
     transform: translateX(-50%);
-	top: -2.25rem; /* Collage quote add quotation mark. Just the left quote */
-	font-size: 4rem; /* Collage quote add quotation mark. Just the left quote */
+	top: -3rem; /* Collage quote add quotation mark. Just the left quote */
+	font-size: 4.5rem; /* Collage quote add quotation mark. Just the left quote */
 	font-weight: 700;
 }
 .block-4 img {
