@@ -1308,7 +1308,7 @@ header {
 		/*background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/Parenthood_Mobile.jpg") center top, no-repeat;*/
 		background-size: cover;
 		height: 360px; /*P.P. Page - decrease height of the family photo section*/
-		/*margin-top: 100vh; */
+		/*margin-top: 100vh; */ 
 	}
 }
 @media (max-width: 47.938em) {
