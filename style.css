@@ -16,6 +16,12 @@
 
 /*--RANDOM STYLE OVERRIDES--*/
 
+/* Mobile No Break class */
+@media(max-width: 40rem) {
+	.nobreak {
+		white-space: nowrap;
+	}
+}
 
 /* VIDEO */
 
@@ -1297,9 +1303,9 @@ header {
 		background-size: cover;*/
 	}
 }
-@media (max-width: 48em) {
+@media (max-width: 47.938em) {
 	.ParentIntro {
-		background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/Parenthood_Mobile.jpeg") center top, no-repeat;
+		background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/Parenthood_Mobile.jpg") center top, no-repeat;
 		background-size: cover;
 		height: 70vh;
 		margin-top: 100vh;
@@ -1314,6 +1320,14 @@ header {
 @media (max-width: 48em) {
 	.ParentIntro .watchCharles {
 		text-align: left;
+	}
+}
+@media (max-width: 40rem) {
+	.ParentIntro .watchCharles {
+		top: auto;
+		position: absolute;
+		bottom: 0;
+		transform: none;
 	}
 }
 .ParentIntro .watchCharles .play_cta {
