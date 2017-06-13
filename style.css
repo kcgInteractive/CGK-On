@@ -1480,7 +1480,7 @@ header {
 }
 @media (max-width: 30.0625em) {
 	.top4_bg .subText, .video_bg .subText {
-		font-size: 28px;
+		font-size: 24px;
 		line-height: 36px;
 	}
 }
@@ -1519,7 +1519,7 @@ header {
 	/* AUDIO: */
 	
 	font-family: "proxima-nova", sans-serif;
-	font-weight: 600;
+	font-weight: 700;
 	font-size: 14px;
 	line-height: 24px;
 	margin-bottom: 0;
@@ -1652,7 +1652,7 @@ header {
 	/* < PREVIOUS: */
 	
 	font-family: "proxima-nova", sans-serif;
-	font-weight: 600;
+	font-weight: 700;
 	font-size: 14px;
 	color: #2F2A2B;
 	text-transform: uppercase;
@@ -1718,6 +1718,7 @@ header {
 @media(max-width: 64rem) {
 	.tile-copy {
 		height: 175px;
+		font-size: 1rem;
 	}
 }
 @media(max-width: 40rem) {
@@ -1851,7 +1852,7 @@ header {
 .ten_more h1 {
 	text-align: left;
 	font-family: "proxima-nova", sans-serif;
-	font-weight: 600;
+	font-weight: 700;
 	font-size: 70px;
 	letter-spacing: 0px;
 	color: #2F2A2B;
@@ -1873,7 +1874,7 @@ header {
 	text-align: left;
 	margin-top: 4rem;
 	font-family: "museo-slab",serif;
-	font-weight: 600;
+	font-weight: 700;
 	font-size: 18px;
 	letter-spacing: 0px;
 	line-height: 24px;
@@ -1999,7 +2000,7 @@ header {
 	left: -1rem;
 	top: -0.25rem;
 	font-size: 2rem;
-	font-weight: 600;
+	font-weight: 700;
 }
 .block-4 img {
 	width: 30%;
@@ -2253,7 +2254,7 @@ header {
 /*.family-principles h1 {
 	text-align: left;
 	font-family: "proxima-nova", sans-serif;
-	font-weight: 600;
+	font-weight: 700;
 	font-size: 70px;
 	letter-spacing: 0px;
 	line-height: 1.25;
@@ -2281,7 +2282,7 @@ header {
 	display: inline;
 	color: #BBB272;
 	font-size: 2.25rem;
-	font-weight: 600;
+	font-weight: 700;
 	margin: 0;
 	font-family: "museo-slab",serif;
 }
