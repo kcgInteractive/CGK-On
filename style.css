@@ -11,6 +11,7 @@
 	box-shadow: 0 0 5px rgba(255,157,24,.5);
 } */
 
+
 /*--BREAKPOINTS--*/
 
 
@@ -121,12 +122,14 @@ header {
 .max_width_container {
 	max-width: 1200px;
 	padding: 0;
+	overflow-x: hidden; 
 	/*--481--*/
 }
 
 @media (max-width: 75em) {
 	.max_width_container {
 		padding: 0 2rem 0;
+		overflow-x: hidden; 
 	}
 }
 
@@ -282,7 +285,7 @@ header {
 	top: 0;
 	z-index: 1000;
 	height: 6.5em;
-	width: 100%;
+	width: 100vw;
 	padding-top: 3rem;
 	-webkit-transition: all ease .5s;
 	transition: all ease .5s;
@@ -357,6 +360,7 @@ header {
 	.cgkONbar_home {
 		padding-top: 0;
 	}
+
 }
 .cgkONbar_home .home_inner {
 	padding: 3rem 0;
@@ -448,6 +452,15 @@ header {
 		padding-left: .75rem;
 		padding-top: 0;
 		padding-bottom: 0;
+	}
+}
+@media (max-width: 23.75em) {
+	.cgkONbar_home .cgkOn img.cgkOn_img {
+		height: 0.9rem;
+		margin: 0.5rem 0;
+	}
+	.cgkONbar_home .cgkOn .cgkOn_swapped {
+		font-size: 10px;
 	}
 }
 /*-- END CGKONBAR --*/
@@ -1428,6 +1441,12 @@ header {
 		margin-left: 0;
 	}
 }
+@media (max-width: 40em) {
+	.ParentIntro .watchCharles .copy {
+		width: 100%;
+		margin-left: 0;
+	}
+}
 @media (max-width: 30.0625em) {
 	.ParentIntro .watchCharles .copy {
 		font-size: 26px;
@@ -2095,6 +2114,7 @@ header {
 	position: relative;
 	font-size: 2rem;
 	margin: 0;
+	font-weight: 700;
 }
 /*.block-3 h3::before {
 	content: "\201C";
@@ -2571,7 +2591,9 @@ header {
 	.popupNav {
 		display: none !important;
 	}
-	
+	.prev-next .popupNav {
+		display: block !important;
+	}
 	.audiojs {
 		padding: 1rem !important;
 		margin-top: -5.5rem !important;
@@ -2667,6 +2689,7 @@ header {
 }
 footer {
 	display: block;
+	padding: 1rem;
 }
 .close_button {
 	position: absolute;
