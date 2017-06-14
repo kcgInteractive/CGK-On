@@ -291,16 +291,18 @@ header {
 
 @media (max-width: 64em) {
 	.cgkONbar {
+		height: 3.5em;
+		padding-top: 0;
 		background: rgba(0, 0, 0, 0.8)
 	}
 }
 
-@media (max-width: 48em) {
+/*@media (max-width: 48em) {
 	.cgkONbar {
 		height: 3.5em;
 		padding-top: 0;
 	}
-}
+}*/
 
 
 /*--481--*/
