@@ -2020,6 +2020,11 @@ header {
 	max-height: 1400px;
 	overflow: hidden;
 }
+@media (max-width: 48em) {
+	.family {
+		max-height: 1100px;
+	}
+}
 .block-1 img {
 	width: 50%;
 	position: relative;
@@ -2035,6 +2040,27 @@ header {
 	width: 23%;
 	position: absolute;
 	right: 27%;
+}
+@media (max-width: 64em) {	
+	.block-3 {
+		width: 40%;
+		position: absolute;
+		right: 15%;
+	}
+}
+@media (max-width: 48em) {
+	.block-3 {
+		/*width: 23%;
+		position: absolute;
+		right: 27%;*/
+	}
+}
+@media (max-width: 37.5625em) {
+	.block-3 {
+		/*width: 23%;
+		position: absolute;
+		right: 27%;*/
+	}
 }
 .block-3 h3 {
 	position: relative;
@@ -2059,6 +2085,11 @@ header {
 	top: -15rem;
 	z-index: 50;
 }
+@media (max-width: 48em) {
+	.block-4 img {
+		top: -5rem;
+	}
+}
 .block-5 img {
 	width: 60%;
 	position: relative;
@@ -2066,7 +2097,11 @@ header {
 	top: -19rem;
 	z-index: 40;
 }
-
+@media (max-width: 48em) {
+	.block-5 img {
+		top: -8rem;
+	}
+}
 @media (max-width: 64em) {
 /*	.block-1, .block-2, .block-4, .block-5 {
 		display: inline-block;
@@ -2126,12 +2161,16 @@ header {
 	.block-1, .block-2, .block-3, .block-4, .block-5 { 
 		width: 100%;
 		padding: 0;
+		position: static;
 	}
 	.block-1 img, .block-2 img, .block-4 img, .block-5 img{
+		position: static;
+		width: 100%;
 		padding: 1rem 0;
 	}
 	.family-principles, .family {
 		padding: 2rem;
+		max-height: none;
 	}
 	.block-3 h3 {
 		font-size: 1.75rem;
