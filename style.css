@@ -11,6 +11,7 @@
 	box-shadow: 0 0 5px rgba(255,157,24,.5);
 } */
 
+
 /*--BREAKPOINTS--*/
 
 
@@ -121,12 +122,14 @@ header {
 .max_width_container {
 	max-width: 1200px;
 	padding: 0;
+	overflow-x: hidden; 
 	/*--481--*/
 }
 
 @media (max-width: 75em) {
 	.max_width_container {
 		padding: 0 2rem 0;
+		overflow-x: hidden; 
 	}
 }
 
@@ -282,7 +285,7 @@ header {
 	top: 0;
 	z-index: 1000;
 	height: 6.5em;
-	width: 100%;
+	width: 100vw;
 	padding-top: 3rem;
 	-webkit-transition: all ease .5s;
 	transition: all ease .5s;
@@ -357,6 +360,7 @@ header {
 	.cgkONbar_home {
 		padding-top: 0;
 	}
+
 }
 .cgkONbar_home .home_inner {
 	padding: 3rem 0;
@@ -448,6 +452,15 @@ header {
 		padding-left: .75rem;
 		padding-top: 0;
 		padding-bottom: 0;
+	}
+}
+@media (max-width: 23.75em) {
+	.cgkONbar_home .cgkOn img.cgkOn_img {
+		height: 0.9rem;
+		margin: 0.5rem 0;
+	}
+	.cgkONbar_home .cgkOn .cgkOn_swapped {
+		font-size: 10px;
 	}
 }
 /*-- END CGKONBAR --*/
@@ -924,35 +937,52 @@ header {
 }
 @media(max-width: 48rem) {
 	.email-inner {
-		margin: 0;
+		margin: 0 auto;
 		padding-left: 2rem;
 		padding-right: 2rem;
 		width: 100%;
-		/*max-width: 350px;*/
+		max-width: 500px;
 	}
 	.email-form p {
+		display: block;
 		width: auto;
 		text-align: center;
+		width: 100%;
+		max-width: 350px;
+		margin: 0 auto;
 		margin-bottom: 1rem;
 	}
 	.email-input {
-		width: 100%;
+		width: 65%;
+		margin-right: 5%;
 		margin-bottom: 1rem;
-
 	}
 	.email-input, .submit-button {
 		margin-left: 0;
+		display: inline-block;
 	}
 	.email-input input{
 		width: 100%;
 	}
 	.submit-button {
-		width: 100%;
+		width: 30%;
 	}
 	.submit-button input {
 		display: block;
 		width: 120px;
 		margin: 0 auto;
+	}
+}
+@media(max-width: 40rem) {
+	.email-input, .submit-button {
+		display: block;
+	}
+	.email-input {
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+	.submit-button {
+		width: 100%;
 	}
 }
 .moreInfo .email-form {
@@ -977,7 +1007,15 @@ header {
 .moreInfo .email-form .submit-button input:hover {
 	background-color: #fff;
 }
-
+@media(max-width: 48rem) {
+	.moreInfo .email-inner {
+		margin: 0 auto;
+		padding-left: 2rem;
+		padding-right: 2rem;
+		width: 100%;
+		max-width: 500px;
+	}
+}
 .watermark {
 	position: relative;
 	height: 2rem;
@@ -1403,6 +1441,12 @@ header {
 		margin-left: 0;
 	}
 }
+@media (max-width: 40em) {
+	.ParentIntro .watchCharles .copy {
+		width: 100%;
+		margin-left: 0;
+	}
+}
 @media (max-width: 30.0625em) {
 	.ParentIntro .watchCharles .copy {
 		font-size: 26px;
@@ -1493,6 +1537,7 @@ header {
 @media (max-width: 30.0625em) {
 	.top4_bg h1, .video_bg h1{
 		font-size: 42px;
+		text-align: left;
 	}
 }
 @media (max-width: 22.5em) {
@@ -1531,6 +1576,7 @@ header {
 	.top4_bg .subText, .video_bg .subText {
 		font-size: 20px;
 		line-height: 30px;
+		text-align: left;
 	}
 }
 .top4_bg .quadBlock {
@@ -2068,6 +2114,7 @@ header {
 	position: relative;
 	font-size: 2rem;
 	margin: 0;
+	font-weight: 700;
 }
 /*.block-3 h3::before {
 	content: "\201C";
@@ -2470,7 +2517,7 @@ header {
 		background-size: cover;*/
 	}
 }
-@media (max-width: 37.5625em) {
+@media (max-width: 48em) {
 	.moreInfo {
 		padding: 2rem 0;
 		/*background: none;
@@ -2544,7 +2591,9 @@ header {
 	.popupNav {
 		display: none !important;
 	}
-	
+	.prev-next .popupNav {
+		display: block !important;
+	}
 	.audiojs {
 		padding: 1rem !important;
 		margin-top: -5.5rem !important;
@@ -2640,6 +2689,7 @@ header {
 }
 footer {
 	display: block;
+	padding: 1rem;
 }
 .close_button {
 	position: absolute;
