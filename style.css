@@ -1048,6 +1048,7 @@ header {
 	margin: 0 auto;
 	padding: 7rem 0;
 	overflow: hidden;
+	position: relative;
 }
 
 .bio-img {
@@ -1062,7 +1063,11 @@ header {
 	float: right;
 	width: 70%;
 	padding-left: 3rem;
+	padding-right: 3rem;
 	padding-top: 0rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .bio-copy h3 {
 	text-transform: uppercase;
@@ -1090,6 +1095,9 @@ header {
 		width: 100%;
 		float: none;
 		padding: 0;
+		position: relative;
+		top: initial;
+		transform: initial;
 	}
 	.bio-copy h3 {
 		margin-top: 1rem;
