@@ -1603,21 +1603,19 @@ header {
 	/* “These books are the: */
 	
 	font-family: "museo-slab",serif;
-	font-size: 36px;
+	font-weight: 300;
+	font-size: 1.7rem;
+	line-height: 1.5;
 	color: #2F2A2B;
-	line-height: 50px;
 	max-width: 650px;
 	margin: 0 auto;
 	padding: 2rem 0 2.5rem;
-	font-weight: 300;
 	/*--481--*/
 	/*--481--*/
 }
 .video_bg .subText {
 	max-width: 850px;
-	font-weight: 300;
-	font-size: 1.7rem;
-	line-height: 1.5;
+
 }
 @media (max-width: 48em) {
 	.top4_bg .subText, .video_bg .subText {
