@@ -1,27 +1,26 @@
 
 function waypoints() {
+	if ($(window).width() > 1025) {
+	    $('#waypoint1').waypoint(function(direction) {    
+	      $(".block-1").addClass("swing-down").removeClass("swing-out");
+	      $(".block-2").addClass("swing-left").removeClass("swing-out");
+	    },{
+	      offset: 900
+	    });
+	  
+	    $('#waypoint2').waypoint(function(direction) {    
+	      $(".block-3").addClass("swing-right").removeClass("swing-out");
+	    },{
+	      offset: 800
+	    });  
 
-    $('#waypoint1').waypoint(function(direction) {    
-      $(".block-1").addClass("swing-down").removeClass("swing-out");
-      $(".block-2").addClass("swing-left").removeClass("swing-out");
-    },{
-      offset: 900
-    });
-  
-    $('#waypoint2').waypoint(function(direction) {    
-      $(".block-3").addClass("swing-right").removeClass("swing-out");
-    },{
-      offset: 800
-    });  
-
-    $('#waypoint3').waypoint(function(direction) {    
-      $(".block-4").addClass("swing-down").removeClass("swing-out");
-      $(".block-5").addClass("swing-up").removeClass("swing-out");
-    },{
-      offset: 800
-    }); 
-    
-
+	    $('#waypoint3').waypoint(function(direction) {    
+	      $(".block-4").addClass("swing-down").removeClass("swing-out");
+	      $(".block-5").addClass("swing-up").removeClass("swing-out");
+	    },{
+	      offset: 800
+	    }); 
+	}
 }waypoints();
 
 
