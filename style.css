@@ -924,11 +924,11 @@ header {
 }
 @media(max-width: 48rem) {
 	.email-inner {
-		margin: 0;
+		margin: 0 auto;
 		padding-left: 2rem;
 		padding-right: 2rem;
 		width: 100%;
-		/*max-width: 350px;*/
+		max-width: 400px;
 	}
 	.email-form p {
 		width: auto;
@@ -977,7 +977,15 @@ header {
 .moreInfo .email-form .submit-button input:hover {
 	background-color: #fff;
 }
-
+@media(max-width: 48rem) {
+	.moreInfo .email-inner {
+		margin: 0 auto;
+		padding-left: 2rem;
+		padding-right: 2rem;
+		width: 100%;
+		max-width: 400px;
+	}
+}
 .watermark {
 	position: relative;
 	height: 2rem;
@@ -1493,6 +1501,7 @@ header {
 @media (max-width: 30.0625em) {
 	.top4_bg h1, .video_bg h1{
 		font-size: 42px;
+		text-align: left;
 	}
 }
 @media (max-width: 22.5em) {
@@ -1531,6 +1540,7 @@ header {
 	.top4_bg .subText, .video_bg .subText {
 		font-size: 20px;
 		line-height: 30px;
+		text-align: left;
 	}
 }
 .top4_bg .quadBlock {
