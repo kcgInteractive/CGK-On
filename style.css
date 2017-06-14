@@ -289,11 +289,16 @@ header {
 	/*--767--*/
 }
 
+@media (max-width: 64em) {
+	.cgkONbar {
+		background: rgba(0, 0, 0, 0.8)
+	}
+}
+
 @media (max-width: 48em) {
 	.cgkONbar {
-		padding-top: 0;
 		height: 3.5em;
-		background: rgba(0, 0, 0, 0.8)
+		padding-top: 0;
 	}
 }
 
