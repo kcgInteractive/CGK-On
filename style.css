@@ -2137,6 +2137,15 @@ header {
 .block-5.swing-out { 
   opacity:0; 
 }
+@media(max-width: 64rem) {
+	.block-1.swing-out,
+	.block-2.swing-out,
+	.block-3.swing-out,
+	.block-4.swing-out,
+	.block-5.swing-out { 
+	  opacity:1; 
+	}
+}
 /* .block-1,
 .block-2,
 .block-3,
