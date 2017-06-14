@@ -551,7 +551,7 @@ header {
 .cgkOn img.cgkOn_img {
 	display: inline-block;
 	line-height: 30px;
-	height: 24px;
+	height: 23px;
 	margin: 3px 0;
 	vertical-align: middle;
 	/*--481--*/
@@ -560,13 +560,13 @@ header {
 }
 @media (max-width: 37.5625em) {
 	.cgkOn img.cgkOn_img {
-		height: 22px;
+		height: 21px;
 		margin: 5px 0;
 	}
 }
 @media (max-width: 23.75em) {
 	.cgkOn img.cgkOn_img {
-		height: 20px;
+		height: 19px;
 		margin: 4px 0;
 	}
 }
