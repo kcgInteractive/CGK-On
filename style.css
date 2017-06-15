@@ -122,7 +122,6 @@ header {
 .max_width_container {
 	max-width: 1200px;
 	padding: 0;
-	overflow-x: hidden; 
 	/*--481--*/
 }
 
@@ -845,7 +844,7 @@ header {
 	margin: 0 auto;
 	padding: 0;
 	padding-top: 4rem;
-	margin-top: 11rem;
+	margin-top: 8rem;
 }
 @media(max-width: 75em) {
 	.home_story_intro {
@@ -1276,7 +1275,29 @@ header {
 	.bookIntro {
 		background: url("/wearekoch/media/KOCHstoriesV2/CGK/bookIntro768.png") center center, no-repeat;
 		background-size: cover;
-		height: 85vh;
+		height: 70vh;
+	}
+}
+@media (max-width: 47.938em) {
+	.bookIntro {
+		height: 60vh;
+	}
+	.bookIntro::before {
+		content: '';
+		display: block;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-color: rgba(0,0,0,0.3);
+		position: absolute;
+	}
+}
+@media(max-width: 23rem) {
+	.bookIntro {
+
 	}
 }
 .bookIntro .watchCharles {
@@ -1288,6 +1309,14 @@ header {
 @media (max-width: 48em) {
 	.bookIntro .watchCharles {
 		text-align: left;
+	}
+}
+@media (max-width: 40rem) {
+	.bookIntro .watchCharles {
+		top: auto;
+		position: absolute;
+		bottom: 0;
+		transform: none;
 	}
 }
 .bookIntro .watchCharles .play_cta {
@@ -1331,8 +1360,8 @@ header {
 }
 @media (max-width: 30.0625em) {
 	.bookIntro .watchCharles .copy {
-		font-size: 26px;
-		line-height: 36px;
+		font-size: 24px;
+		line-height: 32px;
 	}
 }
 @media (max-width: 22.5em) {
@@ -1379,7 +1408,7 @@ header {
 	.ParentIntro {
 		/*background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/Parenthood_Mobile.jpg") center top, no-repeat;*/
 		background-size: cover;
-		height: 360px;
+		height: 70vh;
 		/*margin-top: 100vh;*/
 	}
 }
@@ -1387,8 +1416,25 @@ header {
 	.ParentIntro {
 		background: url("/App_Themes/wearekoch/KOCHstoriesV2/CGK/Parenthood_Mobile.jpg") center top, no-repeat;
 		background-size: cover;
-		height: 70vh;
+		height: 60vh;
 		margin-top: 100vh;
+	}
+	.ParentIntro::before {
+		content: '';
+		display: block;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-color: rgba(0,0,0,0.3);
+		position: absolute;
+	}
+}
+@media(max-width: 23rem) {
+	.ParentIntro {
+
 	}
 }
 .ParentIntro .watchCharles {
@@ -1457,8 +1503,8 @@ header {
 }
 @media (max-width: 30.0625em) {
 	.ParentIntro .watchCharles .copy {
-		font-size: 26px;
-		line-height: 36px;
+		font-size: 24px;
+		line-height: 32px;
 	}
 }
 @media (max-width: 22.5em) {
@@ -1557,21 +1603,19 @@ header {
 	/* “These books are the: */
 	
 	font-family: "museo-slab",serif;
-	font-size: 36px;
+	font-weight: 300;
+	font-size: 1.7rem;
+	line-height: 1.5;
 	color: #2F2A2B;
-	line-height: 50px;
 	max-width: 650px;
 	margin: 0 auto;
 	padding: 2rem 0 2.5rem;
-	font-weight: 300;
 	/*--481--*/
 	/*--481--*/
 }
 .video_bg .subText {
 	max-width: 850px;
-	font-weight: 300;
-	font-size: 1.7rem;
-	line-height: 1.5;
+
 }
 @media (max-width: 48em) {
 	.top4_bg .subText, .video_bg .subText {
