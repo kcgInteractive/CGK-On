@@ -2728,3 +2728,9 @@ footer {
 	background-color: #ffffff;
 	transform: rotate(-45deg);
 }
+.email-inner .InfoLabel {
+    color: #fff;
+    text-align: center;
+    display: block;
+    font-family: "proxima-nova",sans-serif;
+}
