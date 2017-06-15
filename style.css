@@ -319,6 +319,11 @@ header {
 .cgkONbar .cgkOn {
 	padding: 13px 0;
 }
+@media (min-width: 63.938rem) {
+	.cgkONbar .cgkOn, .cgkONbar_home .cgkOn {
+		width: 70%;
+	}
+}
 .cgkONbar .cgkOn img.cgkOn_img {
 	display: inline-block;
 	line-height: 30px;
