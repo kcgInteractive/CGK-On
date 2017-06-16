@@ -343,6 +343,29 @@ function ChangeTextColorOfLink(element, newColor){
 	});
 /*--END NEXT ARTICLE CTA--*/
 ////////////////////////////
+
+/*--DETECT MOBILE DEVICE--*/
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+
 ////////////////////////////
 /*--FEATURE VIDEO--*/
 	function videoScaling() {
@@ -481,22 +504,26 @@ function ChangeTextColorOfLink(element, newColor){
               //////new function for embed////////////////////////
               ////////////////////////////////////////////////////
               function videoDirectEmbed(){
-                fullScreenVideoContainer2.fadeToggle();
-                //alert(videoURL);
-                var aspect;
-                if(clicked.hasClass('241')) {
-                	aspect = '2.4:1';
-                }else {
-                	aspect = '16:9';
-                }
+              	if(isMobile.any()) {
+              		window.location.href = videoURL;
+              	}else {
+	                fullScreenVideoContainer2.fadeToggle();
+	                //alert(videoURL);
+	                var aspect;
+	                if(clicked.hasClass('241')) {
+	                	aspect = '2.4:1';
+	                }else {
+	                	aspect = '16:9';
+	                }
 
-                jwplayer("jwvid").setup({
-                  file: videoURL,
-                  aspectratio: aspect,
-                  width:'80%'
-                });
+	                jwplayer("jwvid").setup({
+	                  file: videoURL,
+	                  aspectratio: aspect,
+	                  width:'80%'
+	                });
 
-              };
+	              };
+	            }
               ///////////////////////////////////////////////////
               function iframeEmbed(){
 				fullScreenVideoContainer.fadeToggle();
